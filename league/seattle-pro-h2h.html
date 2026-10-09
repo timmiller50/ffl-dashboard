@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Seattle Pro H2H Points PPR League · FFL Dashboard</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><title>Seattle Pro H2H Points PPR League · FFL Dashboard</title><style>
 *{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#0f1419;color:#e6e6e6;margin:0;padding:16px;line-height:1.35}
 .wrap{max-width:1400px;margin:0 auto}
@@ -62,6 +62,408 @@ small,.muted{color:#9ab}.small{font-size:12px;margin:4px 0}
 .panel{background:#1a2230;border-radius:12px;padding:14px;margin:0 0 14px}
 .panel h3{margin:0 0 8px;font-size:16px}
 body.detail table{font-size:14px}
+.toolbar{background:#1a2230;border:1px solid #2a3547;border-radius:12px;padding:10px 12px;margin:0 0 14px;display:flex;flex-direction:column;gap:8px}
+.trow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.refresh{appearance:none;border:0;background:#2b6cb0;color:#fff;font:inherit;font-weight:700;font-size:16px;border-radius:8px;padding:10px 18px;min-height:44px;cursor:pointer}
+.refresh:hover{background:#3b82d0}.refresh:disabled{opacity:.6;cursor:progress}
+.refresh.busy::before{content:"";display:inline-block;width:12px;height:12px;margin-right:8px;border:2px solid #fff;border-right-color:transparent;border-radius:50%;vertical-align:-2px;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.rstatus{font-size:13px;color:#b8c4d4;min-width:0;overflow-wrap:anywhere}.rstatus.s-ok{color:#7fe0b0}.rstatus.s-warn{color:#f0b060}.rstatus.s-err{color:#ff8a8a}
+.rnote{margin:0;font-size:12px;color:#9ab}
+.updated .lbl{background:none;border:0;padding:3px 2px;color:#9ab}
+.updated small{color:#7fe0b0}
 footer{margin-top:20px;color:#678;font-size:12px}
 @media(max-width:520px){.stats.four{grid-template-columns:repeat(2,1fr)}.dh h1{font-size:22px}body{padding:10px}h1{font-size:20px}.card{padding:12px}.side .pts{font-size:22px}.stats b{font-size:13px}td,th{padding:5px 4px}}
-</style></head><body class="detail"><div class="wrap"><a class="back" href="../index.html">&lt; Back to dashboard</a><header class="dh"><div class="chead"><span class="plat p-espn">ESPN</span><h1>Seattle Pro H2H Points PPR League</h1></div><div class="updated"><span>Last updated: <b><time datetime="2026-10-09T18:21:15Z">Oct 9, 18:21 UTC</time></b></span><span>Built: <b><time datetime="2026-10-09T18:26:20Z">Oct 9, 18:26 UTC</time></b></span></div></header><div class="stats four"><div><span>Team</span><b>MillerTime</b></div><div><span>Record</span><b>2-2</b></div><div><span>Standing</span><b>5th of 10</b></div><div><span>Flagged starters</span><b>1</b></div></div><section class="panel"><h3>Week 5 matchup</h3><div class="vs"><div class="side me"><div class="tn">MillerTime</div><div class="pts">0.00</div><div class="proj">proj 128.2</div></div><div class="at">vs</div><div class="side opp lead"><div class="tn">Midnight Tokers</div><div class="pts">12.64</div><div class="proj">proj 121.5</div><div class="sub">3-1, 1st</div></div></div></section><section class="panel"><h3>Standings (10 teams)</h3><div class="tw"><table><thead><tr><th class="">#</th><th class="">Team</th><th class="">W-L</th><th class="n">PF</th></tr></thead><tbody><tr class=""><td>1</td><td>Midnight Tokers</td><td>3-1</td><td class="n">580.70</td></tr><tr class=""><td>2</td><td>Lane Train</td><td>3-1</td><td class="n">513.76</td></tr><tr class=""><td>3</td><td>Herd of Donkeys 17</td><td>3-1</td><td class="n">495.88</td></tr><tr class=""><td>4</td><td>Craig&#x27;s Competitive Team</td><td>2-2</td><td class="n">491.38</td></tr><tr class="me"><td>5</td><td>MillerTime</td><td>2-2</td><td class="n">490.68</td></tr><tr class=""><td>6</td><td>Gut Punch</td><td>2-2</td><td class="n">438.26</td></tr><tr class=""><td>7</td><td>Big body catches</td><td>2-2</td><td class="n">386.40</td></tr><tr class=""><td>8</td><td>1st and</td><td>1-3</td><td class="n">519.56</td></tr><tr class=""><td>9</td><td>Red Comet</td><td>1-3</td><td class="n">413.58</td></tr><tr class=""><td>10</td><td>Dakota&#x27;s Dangerous Team</td><td>1-3</td><td class="n">369.92</td></tr></tbody></table></div></section><section class="panel"><h3>My roster · <span class="warn">1 starter flagged</span></h3><h4>Starters</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class=""><td class="slot">QB</td><td>Brock Purdy <small> SF</small></td><td><span class="b ok">OK</span></td><td class="n">17.9</td></tr><tr class=""><td class="slot">RB</td><td>Christian McCaffrey <small> SF</small></td><td><span class="b ok">OK</span></td><td class="n">18.7</td></tr><tr class=""><td class="slot">RB</td><td>Chase Brown <small> CIN</small></td><td><span class="b ok">OK</span></td><td class="n">17.4</td></tr><tr class="flag"><td class="slot">WR</td><td>Malik Nabers <small> NYG</small></td><td><span class="b inj-Q">Q</span></td><td class="n">13.5</td></tr><tr class=""><td class="slot">WR</td><td>Davante Adams <small> LAR</small></td><td><span class="b ok">OK</span></td><td class="n">15.5</td></tr><tr class=""><td class="slot">TE</td><td>Sam LaPorta <small> DET</small></td><td><span class="b ok">OK</span></td><td class="n">13.1</td></tr><tr class=""><td class="slot">FLEX</td><td>Michael Wilson <small>WR ARI</small></td><td><span class="b ok">OK</span></td><td class="n">16.8</td></tr><tr class=""><td class="slot">D/ST</td><td>Steelers <small> PIT</small></td><td><span class="b ok">OK</span></td><td class="n">6.8</td></tr><tr class=""><td class="slot">K</td><td>Chris Boswell <small> PIT</small></td><td><span class="b ok">OK</span></td><td class="n">8.5</td></tr></tbody></table></div><h4>Bench</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class="flag"><td class="slot">Bench</td><td>Lamar Jackson <small>QB BAL</small></td><td><span class="b inj-O">O</span></td><td class="n">0.0</td></tr><tr class=""><td class="slot">Bench</td><td>Luther Burden III <small>WR CHI</small></td><td><span class="b ok">OK</span></td><td class="n">12.3</td></tr><tr class="flag"><td class="slot">Bench</td><td>Rico Dowdle <small>RB PIT</small></td><td><span class="b inj-Q">Q</span></td><td class="n">7.9</td></tr><tr class=""><td class="slot">Bench</td><td>KC Concepcion <small>WR CLE</small></td><td><span class="b ok">OK</span></td><td class="n">10.5</td></tr><tr class=""><td class="slot">Bench</td><td>Kaelon Black <small>RB SF</small></td><td><span class="b ok">OK</span></td><td class="n">5.2</td></tr><tr class=""><td class="slot">Bench</td><td>Tony Pollard <small>RB TEN</small></td><td><span class="b ok">OK</span></td><td class="n">13.0</td></tr><tr class=""><td class="slot">Bench</td><td>Emanuel Wilson <small>RB SEA</small></td><td><span class="b ok">OK</span></td><td class="n">13.6</td></tr></tbody></table></div><h4>Injured reserve</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class="flag"><td class="slot">IR</td><td>Jadarian Price <small>RB SEA</small></td><td><span class="b inj-IR">IR</span></td><td class="n">0.0</td></tr></tbody></table></div></section><p class="upd">ESPN (browser session import) · updated <time datetime="2026-10-09T18:21:15Z">Oct 9, 18:21 UTC</time> · times are UTC</p><a class="back" href="../index.html">&lt; Back to dashboard</a></div></body></html>
+</style></head><body class="detail"><div class="wrap"><a class="back" href="../index.html">&lt; Back to dashboard</a><header class="dh"><div class="chead"><span class="plat p-espn">ESPN</span><h1>Seattle Pro H2H Points PPR League</h1></div></header><div class="toolbar"><div class="trow"><button type="button" id="refresh" class="refresh">&#8635; Refresh</button><span id="rstatus" class="rstatus" role="status" aria-live="polite"></span></div><div class="updated" id="chips"><span class="lbl">Last pulled:</span><span data-plat="ESPN">ESPN: <b><time datetime="2026-10-09T18:21:15Z">Oct 9, 18:21 UTC</time></b></span><span data-plat="Yahoo">Yahoo: <b><time datetime="2026-10-09T18:23:39Z">Oct 9, 18:23 UTC</time></b></span><span data-plat="Sleeper">Sleeper: <b><time datetime="2026-10-09T18:26:20Z">Oct 9, 18:26 UTC</time></b></span><span data-built="1">Built: <b><time datetime="2026-10-09T18:26:20Z">Oct 9, 18:26 UTC</time></b></span></div><p class="rnote">Refresh reloads the saved data and pulls Sleeper live. ESPN and Yahoo update only when re-pulled; Refresh then shows the latest saved pull. Times show in your local time zone.</p></div><div id="dbody"><div class="stats four"><div><span>Team</span><b>MillerTime</b></div><div><span>Record</span><b>2-2</b></div><div><span>Standing</span><b>5th of 10</b></div><div><span>Flagged starters</span><b>1</b></div></div><section class="panel"><h3>Week 5 matchup</h3><div class="vs"><div class="side me"><div class="tn">MillerTime</div><div class="pts">0.00</div><div class="proj">proj 128.2</div></div><div class="at">vs</div><div class="side opp lead"><div class="tn">Midnight Tokers</div><div class="pts">12.64</div><div class="proj">proj 121.5</div><div class="sub">3-1, 1st</div></div></div></section><section class="panel"><h3>Standings (10 teams)</h3><div class="tw"><table><thead><tr><th class="">#</th><th class="">Team</th><th class="">W-L</th><th class="n">PF</th></tr></thead><tbody><tr class=""><td>1</td><td>Midnight Tokers</td><td>3-1</td><td class="n">580.70</td></tr><tr class=""><td>2</td><td>Lane Train</td><td>3-1</td><td class="n">513.76</td></tr><tr class=""><td>3</td><td>Herd of Donkeys 17</td><td>3-1</td><td class="n">495.88</td></tr><tr class=""><td>4</td><td>Craig&#x27;s Competitive Team</td><td>2-2</td><td class="n">491.38</td></tr><tr class="me"><td>5</td><td>MillerTime</td><td>2-2</td><td class="n">490.68</td></tr><tr class=""><td>6</td><td>Gut Punch</td><td>2-2</td><td class="n">438.26</td></tr><tr class=""><td>7</td><td>Big body catches</td><td>2-2</td><td class="n">386.40</td></tr><tr class=""><td>8</td><td>1st and</td><td>1-3</td><td class="n">519.56</td></tr><tr class=""><td>9</td><td>Red Comet</td><td>1-3</td><td class="n">413.58</td></tr><tr class=""><td>10</td><td>Dakota&#x27;s Dangerous Team</td><td>1-3</td><td class="n">369.92</td></tr></tbody></table></div></section><section class="panel"><h3>My roster · <span class="warn">1 starter flagged</span></h3><h4>Starters</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class=""><td class="slot">QB</td><td>Brock Purdy <small> SF</small></td><td><span class="b ok">OK</span></td><td class="n">17.9</td></tr><tr class=""><td class="slot">RB</td><td>Christian McCaffrey <small> SF</small></td><td><span class="b ok">OK</span></td><td class="n">18.7</td></tr><tr class=""><td class="slot">RB</td><td>Chase Brown <small> CIN</small></td><td><span class="b ok">OK</span></td><td class="n">17.4</td></tr><tr class="flag"><td class="slot">WR</td><td>Malik Nabers <small> NYG</small></td><td><span class="b inj-Q">Q</span></td><td class="n">13.5</td></tr><tr class=""><td class="slot">WR</td><td>Davante Adams <small> LAR</small></td><td><span class="b ok">OK</span></td><td class="n">15.5</td></tr><tr class=""><td class="slot">TE</td><td>Sam LaPorta <small> DET</small></td><td><span class="b ok">OK</span></td><td class="n">13.1</td></tr><tr class=""><td class="slot">FLEX</td><td>Michael Wilson <small>WR ARI</small></td><td><span class="b ok">OK</span></td><td class="n">16.8</td></tr><tr class=""><td class="slot">D/ST</td><td>Steelers <small> PIT</small></td><td><span class="b ok">OK</span></td><td class="n">6.8</td></tr><tr class=""><td class="slot">K</td><td>Chris Boswell <small> PIT</small></td><td><span class="b ok">OK</span></td><td class="n">8.5</td></tr></tbody></table></div><h4>Bench</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class="flag"><td class="slot">Bench</td><td>Lamar Jackson <small>QB BAL</small></td><td><span class="b inj-O">O</span></td><td class="n">0.0</td></tr><tr class=""><td class="slot">Bench</td><td>Luther Burden III <small>WR CHI</small></td><td><span class="b ok">OK</span></td><td class="n">12.3</td></tr><tr class="flag"><td class="slot">Bench</td><td>Rico Dowdle <small>RB PIT</small></td><td><span class="b inj-Q">Q</span></td><td class="n">7.9</td></tr><tr class=""><td class="slot">Bench</td><td>KC Concepcion <small>WR CLE</small></td><td><span class="b ok">OK</span></td><td class="n">10.5</td></tr><tr class=""><td class="slot">Bench</td><td>Kaelon Black <small>RB SF</small></td><td><span class="b ok">OK</span></td><td class="n">5.2</td></tr><tr class=""><td class="slot">Bench</td><td>Tony Pollard <small>RB TEN</small></td><td><span class="b ok">OK</span></td><td class="n">13.0</td></tr><tr class=""><td class="slot">Bench</td><td>Emanuel Wilson <small>RB SEA</small></td><td><span class="b ok">OK</span></td><td class="n">13.6</td></tr></tbody></table></div><h4>Injured reserve</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th></tr></thead><tbody><tr class="flag"><td class="slot">IR</td><td>Jadarian Price <small>RB SEA</small></td><td><span class="b inj-IR">IR</span></td><td class="n">0.0</td></tr></tbody></table></div></section><p class="upd">ESPN (browser session import) · updated <time datetime="2026-10-09T18:21:15Z">Oct 9, 18:21 UTC</time></p></div><a class="back" href="../index.html">&lt; Back to dashboard</a></div><script>window.FFL_CFG={"page":"league","lid":"689864242","dataUrl":"../data/leagues.json","priority":["43670","135402","1401978044331089922"],"slugs":{"43670":"no-strategy","135402":"derelict","1401978044331089922":"megalabowl","1121237090":"buffalo-gridiron","689864242":"seattle-pro-h2h","1599505":"yahoo-death"},"sleeper":{"base":"https://api.sleeper.app/v1","league":"1401978044331089922","user":"865267854264664064"}};
+/* FFL dashboard client: Refresh button. Inlined into every page by build_html.py (no external assets).
+   Renderers below mirror build_html.py; the pre-rendered HTML is the no-JS fallback. */
+(function () {
+  'use strict';
+  var CFG = window.FFL_CFG || {};
+  var ATTN = { Q: 1, D: 1, O: 1, IR: 1, DTD: 1 };
+  var INJ = { questionable: 'Q', q: 'Q', doubtful: 'D', d: 'D', out: 'O', o: 'O', ir: 'IR', 'injured reserve': 'IR',
+    dtd: 'DTD', 'day-to-day': 'DTD', pup: 'PUP', sus: 'SUSP', susp: 'SUSP', suspended: 'SUSP', na: null, healthy: null, active: null, '': null };
+  var doc = null;           // last doc loaded from data/leagues.json (+ live Sleeper overlay)
+  var liveInfo = null;      // {at: Date} when the Sleeper overlay succeeded
+  var busy = false;
+
+  /* ---------- helpers ---------- */
+  function esc(x) {
+    return (x == null ? '' : String(x)).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
+  }
+  function num(x, nd) {
+    if (x == null || x === '') return '–';
+    var f = Number(x);
+    if (!isFinite(f)) return esc(x);
+    return f.toFixed(nd == null ? 1 : nd);
+  }
+  function parseTs(s) {
+    var m = /^(\d{4})-(\d\d)-(\d\d)[ T](\d\d):(\d\d):(\d\d)Z$/.exec(s || '');
+    return m ? new Date(Date.UTC(+m[1], m[2] - 1, +m[3], +m[4], +m[5], +m[6])) : null;
+  }
+  function isoZ(d) { return d.toISOString().replace(/\.\d+Z$/, 'Z'); }
+  function stampZ(d) { return isoZ(d).replace('T', ' '); }
+  function fmtLocal(d) {
+    try { return d.toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); }
+    catch (e) { return d.toISOString(); }
+  }
+  function ago(d) {
+    var s = Math.max(0, Math.round((Date.now() - d.getTime()) / 1000));
+    if (s < 60) return 'just now';
+    if (s < 3600) return Math.floor(s / 60) + 'm ago';
+    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
+    return Math.floor(s / 86400) + 'd ago';
+  }
+  function tsTag(s) {
+    var d = parseTs(s);
+    return d ? '<time datetime="' + esc(isoZ(d)) + '">' + esc(fmtLocal(d)) + '</time>' : 'unknown';
+  }
+  function normInjury(raw) {
+    if (raw == null) return null;
+    var k = String(raw).trim().toLowerCase();
+    if (Object.prototype.hasOwnProperty.call(INJ, k)) return INJ[k];
+    return String(raw).trim().toUpperCase();
+  }
+  function injOf(p) { return ('injury' in p) ? p.injury : normInjury(p.injury_status); }
+  function badge(c) { return c ? '<span class="b inj-' + esc(c) + '">' + esc(c) + '</span>' : '<span class="b ok">OK</span>'; }
+  function splitRoster(l) { var r = l.my_roster || {}; return [r.starters || [], r.bench || [], r.ir || []]; }
+  function lid(l) { return String(l.league_id != null ? l.league_id : l.id); }
+  function slug(l) {
+    if (CFG.slugs && CFG.slugs[lid(l)]) return CFG.slugs[lid(l)];
+    return String(l.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'league-' + lid(l);
+  }
+  function pageHref(l) { return 'league/' + slug(l) + '.html'; }
+  function orderLeagues(ls) {
+    var pr = CFG.priority || [];
+    function ix(l) { var i = pr.indexOf(lid(l)); return i < 0 ? pr.length : i; }
+    return ls.slice().sort(function (a, b) { return ix(a) - ix(b); });
+  }
+
+  /* ---------- renderers (mirror build_html.py) ---------- */
+  function attentionItems(leagues) {
+    var items = [];
+    leagues.forEach(function (l) {
+      if (l.status !== 'live') return;
+      splitRoster(l)[0].forEach(function (p) { var c = injOf(p); if (ATTN[c]) items.push([l, p, c]); });
+    });
+    var ord = { O: 0, IR: 0, D: 1, Q: 2, DTD: 2 };
+    items.sort(function (a, b) {
+      var x = ord[a[2]] == null ? 3 : ord[a[2]], y = ord[b[2]] == null ? 3 : ord[b[2]];
+      return x - y || (a[0].name < b[0].name ? -1 : a[0].name > b[0].name ? 1 : 0);
+    });
+    return items;
+  }
+  function rosterTable(ps, showProj, showPts) {
+    if (!ps.length) return '<p class="muted">None</p>';
+    var head = '<th>Slot</th><th>Player</th><th>Status</th>' + (showProj ? '<th class="n">Proj</th>' : '') + (showPts ? '<th class="n">Pts</th>' : '');
+    var rows = ps.map(function (p) {
+      var c = injOf(p), slot = p.slot || p.pos || '', body = p.injury_body_part;
+      var extra = body && c ? ' <span class="muted">(' + esc(body) + ')</span>' : '';
+      return '<tr class="' + (ATTN[c] ? 'flag' : '') + '"><td class="slot">' + esc(slot) + '</td>' +
+        '<td>' + esc(p.name) + ' <small>' + esc(p.pos !== slot ? p.pos : '') + ' ' + esc(p.team) + '</small></td>' +
+        '<td>' + badge(c) + extra + '</td>' +
+        (showProj ? '<td class="n">' + num(p.projection) + '</td>' : '') +
+        (showPts ? '<td class="n">' + num(p.score) + '</td>' : '') + '</tr>';
+    });
+    return '<div class="tw"><table><thead><tr>' + head + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
+  }
+  function standingsTable(l) {
+    var cols = l.standings_columns || [['rank', '#'], ['team', 'Team'], ['record', 'W-L'], ['pf', 'PF'], ['pa', 'PA']];
+    var plain = { rank: 1, team: 1, record: 1, streak: 1 };
+    var head = cols.map(function (c) { return '<th class="' + (plain[c[0]] ? '' : 'n') + '">' + esc(c[1]) + '</th>'; }).join('');
+    var rows = (l.standings || []).map(function (s) {
+      var tds = cols.map(function (c) {
+        var k = c[0], v = s[k];
+        if (k === 'record' && v == null && 'wins' in s) v = s.wins + '-' + s.losses + (s.ties ? '-' + s.ties : '');
+        if (plain[k]) return '<td>' + esc(v) + '</td>';
+        return '<td class="n">' + num(v, (k === 'pf' || k === 'pa' || k === 'season_pts') ? 2 : 1) + '</td>';
+      }).join('');
+      return '<tr class="' + (s.is_me ? 'me' : '') + '">' + tds + '</tr>';
+    }).join('');
+    return '<div class="tw"><table><thead><tr>' + head + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+  function matchupBlock(l) {
+    var m = l.matchup || {};
+    if (!m.opponent) return '<p class="muted">Week ' + esc(m.week) + ': no matchup data ' + esc(m.error || '') + '</p>';
+    var mp = m.my_points, op = m.opponent_points, lead = '';
+    if (mp != null && op != null && isFinite(Number(mp)) && isFinite(Number(op))) lead = Number(mp) > Number(op) ? 'me' : Number(op) > Number(mp) ? 'opp' : '';
+    function side(cls, name, pts, proj, sub, wp) {
+      return '<div class="side ' + cls + '"><div class="tn">' + esc(name) + '</div><div class="pts">' + num(pts, 2) + '</div>' +
+        '<div class="proj">proj ' + num(proj) + '</div>' + (sub ? '<div class="sub">' + esc(sub) + '</div>' : '') + (wp ? '<div class="sub">' + esc(wp) + '</div>' : '') + '</div>';
+    }
+    var me = side('me' + (lead === 'me' ? ' lead' : ''), l.team_name, mp, m.my_projection, null, m.my_win_prob);
+    var opp = side('opp' + (lead === 'opp' ? ' lead' : ''), m.opponent, op, m.opponent_projection,
+      m.opponent_record || (m.opponent_manager ? 'mgr ' + m.opponent_manager : null), m.opponent_win_prob);
+    var meta = [m.dates, m.status].filter(Boolean).join(' · ');
+    var note = m.note ? '<p class="muted small">' + esc(m.note) + '</p>' : '';
+    return '<div class="vs">' + me + '<div class="at">vs</div>' + opp + '</div>' + (meta ? '<p class="muted small">' + esc(meta) + '</p>' : '') + note;
+  }
+  function survivorBlock(l) {
+    var s = l.survivor;
+    if (!s) return '';
+    var cls = s.alive ? 'alive' : 'dead';
+    var txt = (s.alive ? 'ALIVE' : 'ELIMINATED') + (s.status_label ? ' · ' + esc(s.status_label) : '');
+    var el = s.eliminated || [];
+    var elim = el.map(function (e) { return '<li><b>Week ' + esc(e.week) + '</b>: ' + esc(e.team) + ' <span class="muted">(' + num(e.season_pts, 2) + ' pts)</span></li>'; }).join('');
+    return '<div class="surv ' + cls + '"><div class="big">' + txt + '</div>' +
+      '<div>' + esc(s.teams_remaining) + ' of ' + esc(s.teams_total) + ' teams remaining · ' + esc(s.teams_eliminated) + ' eliminated</div>' +
+      (l.format ? '<div class="muted">' + esc(l.format) + '</div>' : '') + '</div>' +
+      '<details data-k="' + esc(lid(l)) + ':elim"><summary>Eliminated teams (' + el.length + ')</summary><ul class="elim">' + elim + '</ul>' +
+      (s.source_updated ? '<p class="muted small">Standings as of ' + esc(s.source_updated) + '</p>' : '') + '</details>';
+  }
+  function rosterParts(l) {
+    var r = splitRoster(l), all = r[0].concat(r[1], r[2]);
+    function any(k) { return all.some(function (p) { return p[k] != null; }); }
+    return { st: r[0], bn: r[1], ir: r[2], proj: any('projection'), pts: any('score'),
+      flagged: r[0].filter(function (p) { return ATTN[injOf(p)]; }).length };
+  }
+  function flagTxt(n) { return n ? ' · <span class="warn">' + n + ' starter' + (n !== 1 ? 's' : '') + ' flagged</span>' : ''; }
+  function rosterHtml(r) {
+    return '<h4>Starters</h4>' + rosterTable(r.st, r.proj, r.pts) + '<h4>Bench</h4>' + rosterTable(r.bn, r.proj, r.pts) +
+      (r.ir.length ? '<h4>Injured reserve</h4>' + rosterTable(r.ir, r.proj, r.pts) : '');
+  }
+  function card(l) {
+    var live = l.status === 'live', plat = esc(l.platform);
+    var head = '<div class="chead"><span class="plat p-' + plat.toLowerCase() + '">' + plat + '</span><h2>' +
+      (live ? '<a class="tl" href="' + esc(pageHref(l)) + '">' + esc(l.name) + '</a>' : esc(l.name)) + '</h2></div>';
+    if (!live) return '<section class="card pending">' + head + '<p class="pend">Pending import</p></section>';
+    var r = rosterParts(l), ts = l.last_updated || l.updated, m = l.matchup || {}, k = esc(lid(l));
+    var stats = '<div class="stats"><div><span>Team</span><b>' + esc(l.team_name) + '</b></div><div><span>Record</span><b>' + esc(l.record || '–') +
+      '</b></div><div><span>Standing</span><b>' + esc(l.standing || '–') + '</b></div></div>';
+    return '<section class="card live">' + head + stats + survivorBlock(l) +
+      '<details open data-k="' + k + ':matchup"><summary>Week ' + esc(m.week || l.week) + ' matchup</summary>' + matchupBlock(l) + '</details>' +
+      '<details data-k="' + k + ':standings"><summary>Standings (' + (l.standings || []).length + ' teams)</summary>' + standingsTable(l) + '</details>' +
+      '<details open data-k="' + k + ':roster"><summary>My roster' + flagTxt(r.flagged) + '</summary>' + rosterHtml(r) + '</details>' +
+      '<p class="upd">' + esc(l.source || l.platform) + ' · updated ' + tsTag(ts) + '</p>' +
+      '<a class="open" href="' + esc(pageHref(l)) + '">Open full view &rarr;</a></section>';
+  }
+  function detailBody(l) {
+    var r = rosterParts(l), ts = l.last_updated || l.updated, m = l.matchup || {}, wk = m.week || l.week;
+    var stats = '<div class="stats four"><div><span>Team</span><b>' + esc(l.team_name) + '</b></div><div><span>Record</span><b>' + esc(l.record || '–') +
+      '</b></div><div><span>Standing</span><b>' + esc(l.standing || '–') + '</b></div><div><span>Flagged starters</span><b>' + r.flagged + '</b></div></div>';
+    return stats + survivorBlock(l) +
+      '<section class="panel"><h3>Week ' + esc(wk) + ' matchup</h3>' + matchupBlock(l) + '</section>' +
+      '<section class="panel"><h3>Standings (' + (l.standings || []).length + ' teams)</h3>' + standingsTable(l) + '</section>' +
+      '<section class="panel"><h3>My roster' + flagTxt(r.flagged) + '</h3>' + rosterHtml(r) + '</section>' +
+      '<p class="upd">' + esc(l.source || l.platform) + ' · updated ' + tsTag(ts) + '</p>';
+  }
+  function attentionHtml(leagues) {
+    var items = attentionItems(leagues);
+    if (!items.length) return '<div class="attn clear"><h3>Needs attention</h3><p style="margin:0">No injured starters across your leagues.</p></div>';
+    var lis = items.map(function (t) {
+      var l = t[0], p = t[1];
+      return '<li>' + badge(t[2]) + ' <b>' + esc(p.name) + '</b> <small>' + esc(p.slot || p.pos) + ' · ' + esc(l.name) + ' (' + esc(l.platform) + ')</small></li>';
+    }).join('');
+    return '<div class="attn"><h3>Needs attention · ' + items.length + ' injured starter' + (items.length !== 1 ? 's' : '') + ' (Q / D / O / IR / DTD)</h3><ul>' + lis + '</ul></div>';
+  }
+  function subtitle(d, leagues) {
+    var live = leagues.filter(function (l) { return l.status === 'live'; });
+    var seen = {}, weeks = [];
+    live.forEach(function (l) { if (l.week && !seen[l.week]) { seen[l.week] = 1; weeks.push(String(l.week)); } });
+    weeks.sort();
+    return esc((d.user || {}).sleeper_username || '') + ' · ' + live.length + ' of ' + leagues.length + ' leagues live' + (weeks.length ? ' · Week ' + esc(weeks.join(', ')) : '');
+  }
+  function chipsHtml(d, leagues) {
+    var order = [], best = {};
+    leagues.forEach(function (l) {
+      var t = parseTs(l.last_updated || l.updated);
+      if (!t) return;
+      if (!best[l.platform]) { best[l.platform] = t; order.push(l.platform); } else if (t > best[l.platform]) best[l.platform] = t;
+    });
+    var h = '<span class="lbl">Last pulled:</span>';
+    order.forEach(function (p) {
+      var t = best[p], isLive = p === 'Sleeper' && liveInfo;
+      h += '<span data-plat="' + esc(p) + '">' + esc(p) + ': <b>' + tsTag(stampZ(t)) + '</b> <small>' + (isLive ? 'live · ' : '') + esc(ago(t)) + '</small></span>';
+    });
+    return h + '<span data-built="1">Built: <b>' + tsTag(d.generated) + '</b></span>';
+  }
+
+  /* ---------- DOM ---------- */
+  function $(id) { return document.getElementById(id); }
+  function renderAll() {
+    if (!doc || !Array.isArray(doc.leagues)) return;
+    var leagues = orderLeagues(doc.leagues);
+    var open = {};
+    [].forEach.call(document.querySelectorAll('details[data-k]'), function (d) { open[d.getAttribute('data-k')] = d.open; });
+    if (CFG.page === 'index') {
+      $('sub').innerHTML = subtitle(doc, leagues);
+      $('attn-wrap').innerHTML = attentionHtml(leagues);
+      $('grid').innerHTML = leagues.map(card).join('');
+    } else {
+      var l = leagues.filter(function (x) { return lid(x) === CFG.lid && x.status === 'live'; })[0];
+      if (l) $('dbody').innerHTML = detailBody(l);
+    }
+    [].forEach.call(document.querySelectorAll('details[data-k]'), function (d) {
+      var k = d.getAttribute('data-k');
+      if (Object.prototype.hasOwnProperty.call(open, k)) d.open = open[k];
+    });
+    renderChips();
+  }
+  function renderChips() {
+    var c = $('chips');
+    if (c && doc && Array.isArray(doc.leagues)) c.innerHTML = chipsHtml(doc, orderLeagues(doc.leagues));
+  }
+  function localizeStatic() {  // pre-rendered times are UTC; show them in local time
+    [].forEach.call(document.querySelectorAll('time[datetime]'), function (t) {
+      var d = new Date(t.getAttribute('datetime'));
+      if (!isNaN(d)) t.textContent = fmtLocal(d);
+    });
+  }
+  function setStatus(msg, cls) { var s = $('rstatus'); if (s) { s.textContent = msg; s.className = 'rstatus' + (cls ? ' s-' + cls : ''); } }
+
+  /* ---------- data ---------- */
+  function timed(url, ms, opts) {
+    var ctl = typeof AbortController === 'function' ? new AbortController() : null;
+    var t = setTimeout(function () { if (ctl) ctl.abort(); }, ms);
+    var o = { cache: 'no-store' };
+    if (ctl) o.signal = ctl.signal;
+    return fetch(url, o).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (j) { clearTimeout(t); return j; }, function (e) { clearTimeout(t); throw e; });
+  }
+  function loadDoc() {
+    return timed(CFG.dataUrl + '?_=' + Date.now(), 15000).then(function (d) {
+      if (!d || !Array.isArray(d.leagues)) throw new Error('bad data file');
+      return d;
+    });
+  }
+
+  /* Live Sleeper overlay. Mutates the Sleeper league entry of `d`. Player names/injuries/projections come from
+     the saved data (known ids); only cheap endpoints are called. Returns {parts:[ok...], errors:[...]}. */
+  function liveSleeper(d) {
+    var S = CFG.sleeper, L = null;
+    d.leagues.forEach(function (l) { if (lid(l) === S.league && l.status === 'live') L = l; });
+    if (!L) return Promise.reject(new Error('Sleeper league is not in the saved data'));
+    var base = S.base + '/league/' + S.league;
+    function sg(p) { return timed(S.base + p + (p.indexOf('?') < 0 ? '?' : '&') + '_=' + Date.now(), 12000); }
+    return Promise.all([sg('/state/nfl'), sg('/league/' + S.league), sg('/league/' + S.league + '/users'), sg('/league/' + S.league + '/rosters')]
+      .map(function (p) { return p.then(function (v) { return { v: v }; }, function (e) { return { e: e }; }); })).then(function (r) {
+      var st = r[0].v, lg = r[1].v, users = r[2].v, rosters = r[3].v, errs = [], done = [];
+      [['state', r[0]], ['league', r[1]], ['users', r[2]], ['rosters', r[3]]].forEach(function (x) { if (x[1].e) errs.push(x[0] + ': ' + (x[1].e.message || x[1].e)); });
+      var oldM = L.matchup || {}, oldWeek = oldM.week || L.week;
+      var week = st ? (st.display_week || st.week || oldWeek) : oldWeek;
+      var sameWeek = Number(week) === Number(oldWeek);
+      // known players from saved data
+      var known = {};
+      var rr = L.my_roster || {};
+      (rr.starters || []).concat(rr.bench || [], rr.ir || [], oldM.opponent_starters || []).forEach(function (p) { if (p && p.id != null) known[p.id] = p; });
+      var unknown = 0;
+      function pinfo(id) {
+        var k = known[id], p;
+        if (k) { p = JSON.parse(JSON.stringify(k)); }
+        else { unknown++; p = { id: id, name: /^\d+$/.test(id) ? 'Player ' + id : id, pos: /^\d+$/.test(id) ? '?' : 'DEF', team: null, injury: null, injury_status: 'Healthy', injury_body_part: null, projection: null }; }
+        p.slot = null; if (!sameWeek) { p.projection = null; } p.score = sameWeek && k ? k.score : null;
+        return p;
+      }
+      var uMap = {};
+      (users || []).forEach(function (u) { uMap[u.user_id] = u; });
+      function teamName(ro) { var u = uMap[ro.owner_id] || {}; return (u.metadata && u.metadata.team_name) || u.display_name || ('Roster ' + ro.roster_id); }
+      function rec(s) { return (s.wins || 0) + '-' + (s.losses || 0) + (s.ties ? '-' + s.ties : ''); }
+      var mine = null, byRid = {};
+      if (rosters && users) {
+        rosters.forEach(function (ro) { byRid[ro.roster_id] = ro; if (ro.owner_id === S.user) mine = ro; });
+        var table = rosters.map(function (ro) {
+          var s = ro.settings || {};
+          return { roster_id: ro.roster_id, team: teamName(ro), owner: (uMap[ro.owner_id] || {}).display_name, wins: s.wins || 0, losses: s.losses || 0, ties: s.ties || 0,
+            pf: Math.round(((s.fpts || 0) + (s.fpts_decimal || 0) / 100) * 100) / 100, pa: Math.round(((s.fpts_against || 0) + (s.fpts_against_decimal || 0) / 100) * 100) / 100,
+            record: rec(s), is_me: ro.owner_id === S.user };
+        });
+        table.sort(function (a, b) { return (b.wins - a.wins) || (a.losses - b.losses) || (b.pf - a.pf); });
+        table.forEach(function (s, i) { s.rank = i + 1; });
+        var me = table.filter(function (s) { return s.is_me; })[0];
+        if (table.length && me) {
+          L.standings = table; L.record = me.record; L.standing = me.rank + ' of ' + table.length; L.team_name = me.team; done.push('standings');
+        } else errs.push('standings: my team not found');
+      }
+      if (mine) {
+        var slots = lg && lg.roster_positions ? lg.roster_positions.filter(function (x) { return x !== 'BN'; })
+          : (rr.starters || []).map(function (p) { return p.slot; });
+        var sIds = mine.starters || [], sSet = {}, reserve = mine.reserve || [], rSet = {};
+        sIds.forEach(function (i) { sSet[i] = 1; }); reserve.forEach(function (i) { rSet[i] = 1; });
+        var starters = [];
+        sIds.forEach(function (id, i) { if (!id || id === '0') return; var p = pinfo(id); p.slot = i < slots.length ? slots[i] : p.pos; starters.push(p); });
+        var bench = (mine.players || []).filter(function (id) { return !sSet[id] && !rSet[id]; }).map(function (id) { var p = pinfo(id); p.slot = 'BN'; return p; });
+        var ir = reserve.map(function (id) { var p = pinfo(id); p.slot = 'IR'; return p; });
+        L.my_roster = { starters: starters, bench: bench, ir: ir }; done.push('roster');
+      }
+      L.week = week;
+      var after = function (ms) {
+        if (ms && mine) {
+          var mm = null, opp = null;
+          ms.forEach(function (m) { if (m.roster_id === mine.roster_id) mm = m; });
+          if (mm) ms.forEach(function (m) { if (m.matchup_id != null && m.matchup_id === mm.matchup_id && m.roster_id !== mm.roster_id) opp = m; });
+          if (mm) {
+            var pp = mm.players_points || {};
+            ['starters', 'bench', 'ir'].forEach(function (g) { L.my_roster[g].forEach(function (p) { if (Object.prototype.hasOwnProperty.call(pp, p.id)) p.score = pp[p.id]; }); });
+            var oroster = opp ? byRid[opp.roster_id] : null;
+            var oname = oroster ? teamName(oroster) : null;
+            var mp = null;
+            if (sameWeek) {
+              var anyP = false, sum = 0;
+              L.my_roster.starters.forEach(function (p) { if (p.projection != null) { anyP = true; sum += p.projection; } });
+              mp = anyP ? Math.round(sum * 10) / 10 : null;
+            }
+            var oldOpp = oldM.opponent;
+            var nm = {}; Object.keys(oldM).forEach(function (k) { nm[k] = oldM[k]; });
+            nm.week = week; nm.my_points = mm.points; nm.opponent = oname; nm.opponent_record = oroster ? rec(oroster.settings || {}) : null;
+            nm.opponent_points = opp ? opp.points : null; nm.my_projection = mp;
+            nm.opponent_projection = (sameWeek && oname && oname === oldOpp) ? oldM.opponent_projection : null;
+            nm.opponent_starters = opp ? (opp.starters || []).filter(function (id) { return id && id !== '0'; }).map(pinfo) : [];
+            delete nm.error;
+            L.matchup = nm; done.push('matchup');
+          } else errs.push('matchup: no matchup for my roster in week ' + week);
+        } else if (mine) errs.push('matchup: request failed');
+        if (unknown) errs.push(unknown + ' player id' + (unknown > 1 ? 's' : '') + ' not in saved data (shown as ids)');
+        if (done.length) {
+          var now = new Date();
+          L.last_updated = stampZ(now); L.source = 'Sleeper API (live, from your browser)';
+        }
+        return { done: done, errs: errs };
+      };
+      if (!mine) return after(null);
+      return sg('/league/' + S.league + '/matchups/' + week).then(after, function (e) { var o = after(null); o.errs.push('matchup: ' + (e.message || e)); return o; });
+    });
+  }
+
+  /* ---------- refresh ---------- */
+  function needsLive() { return CFG.page === 'index' || CFG.lid === (CFG.sleeper || {}).league; }
+  function refresh() {
+    if (busy) return;
+    busy = true;
+    var btn = $('refresh');
+    btn.disabled = true; btn.classList.add('busy'); setStatus('Refreshing…', '');
+    var msgs = [], cls = 'ok';
+    loadDoc().then(function (d) {
+      doc = d; liveInfo = null;
+      if (!needsLive()) { msgs.push('Saved data reloaded'); return; }
+      return liveSleeper(doc).then(function (res) {
+        if (res.done.length) liveInfo = { at: new Date() };
+        if (!res.done.length) { cls = 'warn'; msgs.push('Saved data reloaded; Sleeper live update failed (' + res.errs.join('; ') + ')'); }
+        else if (res.errs.length) { cls = 'warn'; msgs.push('Sleeper partly updated live (' + res.done.join(', ') + '); ' + res.errs.join('; ')); }
+        else msgs.push('Saved data reloaded; Sleeper updated live');
+      }, function (e) { cls = 'warn'; msgs.push('Saved data reloaded; Sleeper live update failed (' + (e && e.message || e) + ')'); });
+    }, function (e) {
+      cls = 'err';
+      msgs.push(location.protocol === 'file:' ? 'Refresh needs the hosted site (browsers block data loading from local files).'
+        : 'Could not load data/leagues.json (' + (e && e.message || e) + '). Showing what was already on screen.');
+    }).then(function () {
+      try { renderAll(); } catch (e) { cls = 'err'; msgs.push('Render problem: ' + (e && e.message || e)); if (window.console) console.warn(e); }
+    }).then(function () {
+      setStatus(fmtLocal(new Date()) + ' · ' + msgs.join(' '), cls);
+      busy = false; btn.disabled = false; btn.classList.remove('busy');
+    });
+  }
+
+  /* ---------- init ---------- */
+  function init() {
+    localizeStatic();
+    var btn = $('refresh');
+    if (btn) btn.addEventListener('click', refresh);
+    // quietly load the data file at runtime so pages pick up newly pushed data without a rebuild
+    if (location.protocol !== 'file:') loadDoc().then(function (d) { doc = d; renderAll(); }, function () { /* keep the pre-rendered page */ });
+    setInterval(function () { try { renderChips(); } catch (e) { /* ignore */ } }, 60000);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script></body></html>

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Render data/leagues.json -> index.html (static, no JS, no external assets)."""
+"""Render data/leagues.json -> index.html + league/<slug>.html.
+
+Pages are fully pre-rendered (work without JS). client.src.js is inlined into each page: the Refresh button
+re-fetches data/leagues.json, does a live Sleeper pull in the browser and re-renders. No external assets."""
 import html, json, re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -154,11 +157,13 @@ def survivor_block(l):
     return (f'<div class="surv {cls}"><div class="big">{txt}</div>'
             f'<div>{esc(s.get("teams_remaining"))} of {esc(s.get("teams_total"))} teams remaining · {esc(s.get("teams_eliminated"))} eliminated</div>'
             f'{"<div class=muted>" + esc(l.get("format")) + "</div>" if l.get("format") else ""}</div>'
-            f'<details><summary>Eliminated teams ({len(s.get("eliminated", []))})</summary><ul class="elim">{elim}</ul>'
+            f'<details data-k="{esc(lid(l))}:elim"><summary>Eliminated teams ({len(s.get("eliminated", []))})</summary><ul class="elim">{elim}</ul>'
             + (f'<p class="muted small">Standings as of {esc(s.get("source_updated"))}</p>' if s.get("source_updated") else "") + '</details>')
 
 
 PRIORITY = ["43670", "135402", "1401978044331089922"]  # No Strategy, Derelict, Megalabowl first
+SLEEPER_LEAGUE_ID = "1401978044331089922"
+SLEEPER_USER_ID = "865267854264664064"
 SLUGS = {"43670": "no-strategy", "135402": "derelict", "1401978044331089922": "megalabowl",
          "1121237090": "buffalo-gridiron", "689864242": "seattle-pro-h2h", "1599505": "yahoo-death"}
 
@@ -185,7 +190,7 @@ def card(l):
     live = l.get("status") == "live"
     plat = esc(l["platform"])
     head = (f'<div class="chead"><span class="plat p-{plat.lower()}">{plat}</span>'
-            f'<h2>{"<a class=tl href=" + chr(34) + esc(page_href(l)) + chr(34) + ">" + esc(l["name"]) + "</a>" if live else esc(l["name"])}</h2></div>')
+            f'<h2>{"<a class=" + chr(34) + "tl" + chr(34) + " href=" + chr(34) + esc(page_href(l)) + chr(34) + ">" + esc(l["name"]) + "</a>" if live else esc(l["name"])}</h2></div>')
     if not live:
         return f'<section class="card pending">{head}<p class="pend">Pending import</p></section>'
     st, bn, ir = split_roster(l)
@@ -198,9 +203,9 @@ def card(l):
              f'<div><span>Record</span><b>{esc(l.get("record") or "–")}</b></div>'
              f'<div><span>Standing</span><b>{esc(l.get("standing") or "–")}</b></div></div>')
     return (f'<section class="card live">{head}{stats}{survivor_block(l)}'
-            f'<details open><summary>Week {esc((l.get("matchup") or {}).get("week") or l.get("week"))} matchup</summary>{matchup_block(l)}</details>'
-            f'<details><summary>Standings ({len(l.get("standings", []))} teams)</summary>{standings_table(l)}</details>'
-            f'<details open><summary>My roster{flag_txt}</summary>'
+            f'<details open data-k="{esc(lid(l))}:matchup"><summary>Week {esc((l.get("matchup") or {}).get("week") or l.get("week"))} matchup</summary>{matchup_block(l)}</details>'
+            f'<details data-k="{esc(lid(l))}:standings"><summary>Standings ({len(l.get("standings", []))} teams)</summary>{standings_table(l)}</details>'
+            f'<details open data-k="{esc(lid(l))}:roster"><summary>My roster{flag_txt}</summary>'
             f'<h4>Starters</h4>{roster_table(st, has_proj, has_pts)}'
             f'<h4>Bench</h4>{roster_table(bn, has_proj, has_pts)}'
             + (f'<h4>Injured reserve</h4>{roster_table(ir, has_proj, has_pts)}' if ir else '') + '</details>'
@@ -208,8 +213,8 @@ def card(l):
             f'<a class="open" href="{esc(page_href(l))}">Open full view &rarr;</a></section>')
 
 
-def detail_page(l, doc):
-    plat = esc(l["platform"])
+def detail_body(l):
+    """Everything inside #dbody on a league page (mirrored by detailBody() in client.src.js)."""
     st, bn, ir = split_roster(l)
     has_proj = any(p.get("projection") is not None for p in st + bn + ir)
     has_pts = any(p.get("score") is not None for p in st + bn + ir)
@@ -222,22 +227,69 @@ def detail_page(l, doc):
              f'<div><span>Standing</span><b>{esc(l.get("standing") or "–")}</b></div>'
              f'<div><span>Flagged starters</span><b>{flagged}</b></div></div>')
     flag_txt = f' · <span class="warn">{flagged} starter{"s" if flagged != 1 else ""} flagged</span>' if flagged else ""
-    body = (f'<a class="back" href="../index.html">&lt; Back to dashboard</a>'
-            f'<header class="dh"><div class="chead"><span class="plat p-{plat.lower()}">{plat}</span><h1>{esc(l["name"])}</h1></div>'
-            f'<div class="updated"><span>Last updated: <b>{ts_tag(ts)}</b></span><span>Built: <b>{ts_tag(doc.get("generated"))}</b></span></div></header>'
-            f'{stats}{survivor_block(l)}'
+    return (f'{stats}{survivor_block(l)}'
             f'<section class="panel"><h3>Week {esc(wk)} matchup</h3>{matchup_block(l)}</section>'
             f'<section class="panel"><h3>Standings ({len(l.get("standings", []))} teams)</h3>{standings_table(l)}</section>'
             f'<section class="panel"><h3>My roster{flag_txt}</h3>'
             f'<h4>Starters</h4>{roster_table(st, has_proj, has_pts)}'
             f'<h4>Bench</h4>{roster_table(bn, has_proj, has_pts)}'
             + (f'<h4>Injured reserve</h4>{roster_table(ir, has_proj, has_pts)}' if ir else '') + '</section>'
-            f'<p class="upd">{esc(l.get("source") or l["platform"])} · updated {ts_tag(ts)} · times are UTC</p>'
+            f'<p class="upd">{esc(l.get("source") or l["platform"])} · updated {ts_tag(ts)}</p>')
+
+
+def platform_times(leagues):
+    """{platform: latest last_updated datetime} in league display order."""
+    plat_ts = {}
+    for l in leagues:
+        t = parse_ts(l.get("last_updated") or l.get("updated"))
+        if t and (l["platform"] not in plat_ts or t > plat_ts[l["platform"]]):
+            plat_ts[l["platform"]] = t
+    return plat_ts
+
+
+def chips_html(doc, leagues):
+    chips = '<span class="lbl">Last pulled:</span>'
+    chips += "".join(f'<span data-plat="{esc(p)}">{esc(p)}: <b>{ts_tag(t.strftime("%Y-%m-%d %H:%M:%SZ"))}</b></span>'
+                     for p, t in platform_times(leagues).items())
+    chips += f'<span data-built="1">Built: <b>{ts_tag(doc.get("generated"))}</b></span>'
+    return chips
+
+
+def toolbar(doc, leagues):
+    return ('<div class="toolbar"><div class="trow">'
+            '<button type="button" id="refresh" class="refresh">&#8635; Refresh</button>'
+            '<span id="rstatus" class="rstatus" role="status" aria-live="polite"></span></div>'
+            f'<div class="updated" id="chips">{chips_html(doc, leagues)}</div>'
+            '<p class="rnote">Refresh reloads the saved data and pulls Sleeper live. ESPN and Yahoo update only when re-pulled; '
+            'Refresh then shows the latest saved pull. Times show in your local time zone.</p></div>')
+
+
+def script_tag(cfg):
+    js = (Path(__file__).parent / "client.src.js").read_text()
+    assert "</script" not in js.lower()
+    c = json.dumps(cfg, separators=(",", ":")).replace("</", "<\\/")
+    return f"<script>window.FFL_CFG={c};\n{js}</script>"
+
+
+def cfg_for(page, doc, lid_=None):
+    return {"page": page, "lid": lid_, "dataUrl": ("data/leagues.json" if page == "index" else "../data/leagues.json"),
+            "priority": PRIORITY, "slugs": SLUGS,
+            "sleeper": {"base": "https://api.sleeper.app/v1", "league": SLEEPER_LEAGUE_ID,
+                        "user": (doc.get("user") or {}).get("sleeper_user_id") or SLEEPER_USER_ID}}
+
+
+def detail_page(l, doc):
+    plat = esc(l["platform"])
+    leagues = order_leagues(doc["leagues"])
+    body = (f'<a class="back" href="../index.html">&lt; Back to dashboard</a>'
+            f'<header class="dh"><div class="chead"><span class="plat p-{plat.lower()}">{plat}</span><h1>{esc(l["name"])}</h1></div></header>'
+            f'{toolbar(doc, leagues)}'
+            f'<div id="dbody">{detail_body(l)}</div>'
             f'<a class="back" href="../index.html">&lt; Back to dashboard</a>')
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,">'
             f'<title>{esc(l["name"])} · FFL Dashboard</title><style>{CSS}</style></head><body class="detail"><div class="wrap">'
-            f'{body}</div></body></html>')
+            f'{body}</div>{script_tag(cfg_for("league", doc, lid(l)))}</body></html>')
 
 
 CSS = """
@@ -304,38 +356,46 @@ small,.muted{color:#9ab}.small{font-size:12px;margin:4px 0}
 .panel{background:#1a2230;border-radius:12px;padding:14px;margin:0 0 14px}
 .panel h3{margin:0 0 8px;font-size:16px}
 body.detail table{font-size:14px}
+.toolbar{background:#1a2230;border:1px solid #2a3547;border-radius:12px;padding:10px 12px;margin:0 0 14px;display:flex;flex-direction:column;gap:8px}
+.trow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.refresh{appearance:none;border:0;background:#2b6cb0;color:#fff;font:inherit;font-weight:700;font-size:16px;border-radius:8px;padding:10px 18px;min-height:44px;cursor:pointer}
+.refresh:hover{background:#3b82d0}.refresh:disabled{opacity:.6;cursor:progress}
+.refresh.busy::before{content:"";display:inline-block;width:12px;height:12px;margin-right:8px;border:2px solid #fff;border-right-color:transparent;border-radius:50%;vertical-align:-2px;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.rstatus{font-size:13px;color:#b8c4d4;min-width:0;overflow-wrap:anywhere}.rstatus.s-ok{color:#7fe0b0}.rstatus.s-warn{color:#f0b060}.rstatus.s-err{color:#ff8a8a}
+.rnote{margin:0;font-size:12px;color:#9ab}
+.updated .lbl{background:none;border:0;padding:3px 2px;color:#9ab}
+.updated small{color:#7fe0b0}
 footer{margin-top:20px;color:#678;font-size:12px}
 @media(max-width:520px){.stats.four{grid-template-columns:repeat(2,1fr)}.dh h1{font-size:22px}body{padding:10px}h1{font-size:20px}.card{padding:12px}.side .pts{font-size:22px}.stats b{font-size:13px}td,th{padding:5px 4px}}
 """
 
 
-def render(doc):
-    leagues = doc["leagues"]
-    leagues = order_leagues(leagues)
-    live = [l for l in leagues if l.get("status") == "live"]
-    # last-updated per platform (latest of its leagues)
-    plat_ts = {}
-    for l in leagues:
-        t = parse_ts(l.get("last_updated") or l.get("updated"))
-        if t and (l["platform"] not in plat_ts or t > plat_ts[l["platform"]]):
-            plat_ts[l["platform"]] = t
-    chips = "".join(f'<span>{esc(p)}: <b>{ts_tag(t.strftime("%Y-%m-%d %H:%M:%SZ"))}</b></span>' for p, t in plat_ts.items())
-    chips += f'<span>Built: <b>{ts_tag(doc.get("generated"))}</b></span>'
-    weeks = sorted({str(l.get("week")) for l in live if l.get("week")})
+def attention_html(leagues):
     items = attention_items(leagues)
     if items:
         lis = "".join(f'<li>{badge(c)} <b>{esc(p["name"])}</b> <small>{esc(p.get("slot") or p.get("pos"))} · {esc(l["name"])} ({esc(l["platform"])})</small></li>' for l, p, c in items)
-        attn = f'<div class="attn"><h3>Needs attention · {len(items)} injured starter{"s" if len(items) != 1 else ""} (Q / D / O / IR / DTD)</h3><ul>{lis}</ul></div>'
-    else:
-        attn = '<div class="attn clear"><h3>Needs attention</h3><p style="margin:0">No injured starters across your leagues.</p></div>'
+        return f'<div class="attn"><h3>Needs attention · {len(items)} injured starter{"s" if len(items) != 1 else ""} (Q / D / O / IR / DTD)</h3><ul>{lis}</ul></div>'
+    return '<div class="attn clear"><h3>Needs attention</h3><p style="margin:0">No injured starters across your leagues.</p></div>'
+
+
+def subtitle(doc, leagues):
+    live = [l for l in leagues if l.get("status") == "live"]
+    weeks = sorted({str(l.get("week")) for l in live if l.get("week")})
     user = doc.get("user", {}).get("sleeper_username", "")
+    return f'{esc(user)} · {len(live)} of {len(leagues)} leagues live{" · Week " + esc(", ".join(weeks)) if weeks else ""}'
+
+
+def render(doc):
+    leagues = order_leagues(doc["leagues"])
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,">'
             f'<title>FFL Dashboard</title><style>{CSS}</style></head><body><div class="wrap">'
-            f'<header><div><h1>FFL Dashboard</h1><div class="muted small">{esc(user)} · {len(live)} of {len(leagues)} leagues live'
-            f'{" · Week " + esc(", ".join(weeks)) if weeks else ""}</div></div><div class="updated">{chips}</div></header>'
-            f'{attn}<div class="grid">{"".join(card(l) for l in leagues)}</div>'
-            '<footer>Static page generated from data/leagues.json. Times are UTC.</footer></div></body></html>')
+            f'<header><div><h1>FFL Dashboard</h1><div class="muted small" id="sub">{subtitle(doc, leagues)}</div></div></header>'
+            f'{toolbar(doc, leagues)}'
+            f'<div id="attn-wrap">{attention_html(leagues)}</div><div class="grid" id="grid">{"".join(card(l) for l in leagues)}</div>'
+            '<footer>Generated from data/leagues.json. Times show in your local time zone (UTC if JavaScript is off).</footer></div>'
+            f'{script_tag(cfg_for("index", doc))}</body></html>')
 
 
 def write_html(doc, path):
