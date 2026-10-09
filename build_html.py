@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Render data/leagues.json -> index.html (static, no JS, no external assets)."""
-import html, json
+import html, json, re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -158,11 +158,34 @@ def survivor_block(l):
             + (f'<p class="muted small">Standings as of {esc(s.get("source_updated"))}</p>' if s.get("source_updated") else "") + '</details>')
 
 
+PRIORITY = ["43670", "135402", "1401978044331089922"]  # No Strategy, Derelict, Megalabowl first
+SLUGS = {"43670": "no-strategy", "135402": "derelict", "1401978044331089922": "megalabowl",
+         "1121237090": "buffalo-gridiron", "689864242": "seattle-pro-h2h", "1599505": "yahoo-death"}
+
+
+def lid(l):
+    return str(l.get("league_id") or l.get("id"))
+
+
+def slug(l):
+    if lid(l) in SLUGS:
+        return SLUGS[lid(l)]
+    return re.sub(r"[^a-z0-9]+", "-", str(l.get("name", "")).lower()).strip("-") or f"league-{lid(l)}"
+
+
+def page_href(l, prefix="league/"):
+    return f"{prefix}{slug(l)}.html"
+
+
+def order_leagues(leagues):
+    return sorted(leagues, key=lambda l: PRIORITY.index(lid(l)) if lid(l) in PRIORITY else len(PRIORITY))
+
+
 def card(l):
     live = l.get("status") == "live"
     plat = esc(l["platform"])
     head = (f'<div class="chead"><span class="plat p-{plat.lower()}">{plat}</span>'
-            f'<h2>{esc(l["name"])}</h2></div>')
+            f'<h2>{"<a class=tl href=" + chr(34) + esc(page_href(l)) + chr(34) + ">" + esc(l["name"]) + "</a>" if live else esc(l["name"])}</h2></div>')
     if not live:
         return f'<section class="card pending">{head}<p class="pend">Pending import</p></section>'
     st, bn, ir = split_roster(l)
@@ -181,7 +204,40 @@ def card(l):
             f'<h4>Starters</h4>{roster_table(st, has_proj, has_pts)}'
             f'<h4>Bench</h4>{roster_table(bn, has_proj, has_pts)}'
             + (f'<h4>Injured reserve</h4>{roster_table(ir, has_proj, has_pts)}' if ir else '') + '</details>'
-            f'<p class="upd">{esc(l.get("source") or l["platform"])} · updated {ts_tag(ts)}</p></section>')
+            f'<p class="upd">{esc(l.get("source") or l["platform"])} · updated {ts_tag(ts)}</p>'
+            f'<a class="open" href="{esc(page_href(l))}">Open full view &rarr;</a></section>')
+
+
+def detail_page(l, doc):
+    plat = esc(l["platform"])
+    st, bn, ir = split_roster(l)
+    has_proj = any(p.get("projection") is not None for p in st + bn + ir)
+    has_pts = any(p.get("score") is not None for p in st + bn + ir)
+    flagged = sum(1 for p in st if inj_of(p) in ATTENTION)
+    ts = l.get("last_updated") or l.get("updated")
+    m = l.get("matchup") or {}
+    wk = m.get("week") or l.get("week")
+    stats = (f'<div class="stats four"><div><span>Team</span><b>{esc(l.get("team_name"))}</b></div>'
+             f'<div><span>Record</span><b>{esc(l.get("record") or "–")}</b></div>'
+             f'<div><span>Standing</span><b>{esc(l.get("standing") or "–")}</b></div>'
+             f'<div><span>Flagged starters</span><b>{flagged}</b></div></div>')
+    flag_txt = f' · <span class="warn">{flagged} starter{"s" if flagged != 1 else ""} flagged</span>' if flagged else ""
+    body = (f'<a class="back" href="../index.html">&lt; Back to dashboard</a>'
+            f'<header class="dh"><div class="chead"><span class="plat p-{plat.lower()}">{plat}</span><h1>{esc(l["name"])}</h1></div>'
+            f'<div class="updated"><span>Last updated: <b>{ts_tag(ts)}</b></span><span>Built: <b>{ts_tag(doc.get("generated"))}</b></span></div></header>'
+            f'{stats}{survivor_block(l)}'
+            f'<section class="panel"><h3>Week {esc(wk)} matchup</h3>{matchup_block(l)}</section>'
+            f'<section class="panel"><h3>Standings ({len(l.get("standings", []))} teams)</h3>{standings_table(l)}</section>'
+            f'<section class="panel"><h3>My roster{flag_txt}</h3>'
+            f'<h4>Starters</h4>{roster_table(st, has_proj, has_pts)}'
+            f'<h4>Bench</h4>{roster_table(bn, has_proj, has_pts)}'
+            + (f'<h4>Injured reserve</h4>{roster_table(ir, has_proj, has_pts)}' if ir else '') + '</section>'
+            f'<p class="upd">{esc(l.get("source") or l["platform"])} · updated {ts_tag(ts)} · times are UTC</p>'
+            f'<a class="back" href="../index.html">&lt; Back to dashboard</a>')
+    return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            f'<title>{esc(l["name"])} · FFL Dashboard</title><style>{CSS}</style></head><body class="detail"><div class="wrap">'
+            f'{body}</div></body></html>')
 
 
 CSS = """
@@ -238,15 +294,24 @@ small,.muted{color:#9ab}.small{font-size:12px;margin:4px 0}
 .side .proj{font-size:12px;color:#9ab}.side .sub{font-size:11px;color:#9ab;margin-top:2px}
 .at{align-self:center;color:#678;font-size:12px}
 .pend{color:#e0a030;font-weight:700}.upd{color:#9ab;font-size:12px;margin:8px 0 0}
+.tl{color:inherit;text-decoration:none;border-bottom:1px dashed #678}.tl:hover{color:#7fb8ff}
+.open{display:block;margin-top:10px;text-align:center;background:#2b6cb0;color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:10px;font-size:14px}
+.open:hover{background:#3b82d0}
+.back{display:inline-block;margin:0 0 12px;background:#2b6cb0;color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:10px 16px;font-size:16px}
+.back:hover{background:#3b82d0}
+.dh{margin-bottom:12px}.dh h1{font-size:28px}
+.stats.four{grid-template-columns:repeat(4,1fr)}
+.panel{background:#1a2230;border-radius:12px;padding:14px;margin:0 0 14px}
+.panel h3{margin:0 0 8px;font-size:16px}
+body.detail table{font-size:14px}
 footer{margin-top:20px;color:#678;font-size:12px}
-@media(max-width:520px){body{padding:10px}h1{font-size:20px}.card{padding:12px}.side .pts{font-size:22px}.stats b{font-size:13px}td,th{padding:5px 4px}}
+@media(max-width:520px){.stats.four{grid-template-columns:repeat(2,1fr)}.dh h1{font-size:22px}body{padding:10px}h1{font-size:20px}.card{padding:12px}.side .pts{font-size:22px}.stats b{font-size:13px}td,th{padding:5px 4px}}
 """
 
 
 def render(doc):
     leagues = doc["leagues"]
-    PRIORITY = ["43670", "135402", "1401978044331089922"]
-    leagues = sorted(leagues, key=lambda l: PRIORITY.index(str(l.get("league_id") or l.get("id"))) if str(l.get("league_id") or l.get("id")) in PRIORITY else len(PRIORITY))
+    leagues = order_leagues(leagues)
     live = [l for l in leagues if l.get("status") == "live"]
     # last-updated per platform (latest of its leagues)
     plat_ts = {}
@@ -274,7 +339,20 @@ def render(doc):
 
 
 def write_html(doc, path):
-    Path(path).write_text(render(doc))
+    """Write index.html at `path` plus league/<slug>.html next to it (all leagues)."""
+    path = Path(path)
+    path.write_text(render(doc))
+    out = path.parent / "league"
+    out.mkdir(exist_ok=True)
+    keep = set()
+    for l in doc["leagues"]:
+        if l.get("status") == "live":
+            f = out / f"{slug(l)}.html"
+            f.write_text(detail_page(l, doc))
+            keep.add(f.name)
+    for old in out.glob("*.html"):  # drop pages of leagues that no longer exist
+        if old.name not in keep:
+            old.unlink()
 
 
 if __name__ == "__main__":

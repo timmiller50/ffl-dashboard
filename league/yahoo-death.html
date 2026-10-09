@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yahoo Death 1599505 · FFL Dashboard</title><style>
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#0f1419;color:#e6e6e6;margin:0;padding:16px;line-height:1.35}
+.wrap{max-width:1400px;margin:0 auto}
+header{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;justify-content:space-between;margin-bottom:12px}
+h1{margin:0;font-size:24px}h2{margin:0;font-size:18px}h4{margin:12px 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#9ab}
+.updated{display:flex;flex-wrap:wrap;gap:6px;font-size:12px}
+.updated span{background:#1a2230;border:1px solid #2a3547;border-radius:999px;padding:3px 10px;color:#b8c4d4}
+.updated b{color:#e6e6e6}
+.attn{background:#2b2113;border:1px solid #8a4b12;border-left:5px solid #e0a030;border-radius:10px;padding:10px 14px;margin-bottom:16px}
+.attn.clear{background:#13261d;border-color:#1f5f3f;border-left-color:#3ecf8e}
+.attn h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:#f0c070}
+.attn.clear h3{color:#7fe0b0}
+.attn ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.attn li{background:#1a2230;border-radius:8px;padding:5px 9px;font-size:13px}
+.attn li small{color:#9ab}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:16px;align-items:start}
+.card{background:#1a2230;border-radius:12px;padding:14px;border-top:4px solid #555;min-width:0}
+.card.live{border-top-color:#3ecf8e}.card.pending{border-top-color:#e0a030;opacity:.85}
+.chead{display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.plat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border-radius:6px;padding:2px 7px;background:#334}
+.p-sleeper{background:#1f4f8a}.p-espn{background:#8a1f2b}.p-yahoo{background:#5b2a8a}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px}
+.stats div{background:#141b27;border-radius:8px;padding:6px 8px;min-width:0}
+.stats span{display:block;font-size:11px;color:#9ab;text-transform:uppercase}
+.stats b{font-size:14px;overflow-wrap:anywhere}
+.surv{border-radius:8px;padding:8px 10px;margin:6px 0;font-size:13px}
+.surv.alive{background:#13261d;border:1px solid #1f5f3f}.surv.dead{background:#2b1315;border:1px solid #8a1f2b}
+.surv .big{font-size:18px;font-weight:800}
+.elim{margin:6px 0 0;padding-left:18px;font-size:13px}
+details{border-top:1px solid #2a3547;padding:4px 0}
+summary{cursor:pointer;font-weight:600;padding:8px 0;font-size:14px}
+.warn{color:#f0b060}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font-size:11px;text-transform:uppercase;color:#9ab;font-weight:600}
+td,th{padding:5px 6px;text-align:left;border-bottom:1px solid #2a3547;white-space:nowrap}
+td:nth-child(2){white-space:normal}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+td.slot{color:#9ab;font-size:12px;width:1%}
+tr.me{background:#27406b}tr.flag{background:#2b2113}
+small,.muted{color:#9ab}.small{font-size:12px;margin:4px 0}
+.b{display:inline-block;padding:1px 7px;border-radius:8px;font-size:11px;font-weight:700;min-width:30px;text-align:center}
+.ok{background:#1f5f3f;color:#bfeed5}
+.inj-Q,.inj-DTD{background:#8a6a12;color:#fff1c0}.inj-D{background:#a8501a;color:#fff}
+.inj-O,.inj-IR{background:#a62b2b;color:#fff}.inj-PUP,.inj-SUSP{background:#6a2a8a;color:#fff}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:stretch;margin:4px 0}
+.side{background:#141b27;border-radius:8px;padding:8px;text-align:center;min-width:0;border:2px solid transparent}
+.side.lead{border-color:#3ecf8e}
+.side .tn{font-size:13px;font-weight:600;overflow-wrap:anywhere}
+.side .pts{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+.side .proj{font-size:12px;color:#9ab}.side .sub{font-size:11px;color:#9ab;margin-top:2px}
+.at{align-self:center;color:#678;font-size:12px}
+.pend{color:#e0a030;font-weight:700}.upd{color:#9ab;font-size:12px;margin:8px 0 0}
+.tl{color:inherit;text-decoration:none;border-bottom:1px dashed #678}.tl:hover{color:#7fb8ff}
+.open{display:block;margin-top:10px;text-align:center;background:#2b6cb0;color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:10px;font-size:14px}
+.open:hover{background:#3b82d0}
+.back{display:inline-block;margin:0 0 12px;background:#2b6cb0;color:#fff;font-weight:700;text-decoration:none;border-radius:8px;padding:10px 16px;font-size:16px}
+.back:hover{background:#3b82d0}
+.dh{margin-bottom:12px}.dh h1{font-size:28px}
+.stats.four{grid-template-columns:repeat(4,1fr)}
+.panel{background:#1a2230;border-radius:12px;padding:14px;margin:0 0 14px}
+.panel h3{margin:0 0 8px;font-size:16px}
+body.detail table{font-size:14px}
+footer{margin-top:20px;color:#678;font-size:12px}
+@media(max-width:520px){.stats.four{grid-template-columns:repeat(2,1fr)}.dh h1{font-size:22px}body{padding:10px}h1{font-size:20px}.card{padding:12px}.side .pts{font-size:22px}.stats b{font-size:13px}td,th{padding:5px 4px}}
+</style></head><body class="detail"><div class="wrap"><a class="back" href="../index.html">&lt; Back to dashboard</a><header class="dh"><div class="chead"><span class="plat p-yahoo">Yahoo</span><h1>Yahoo Death 1599505</h1></div><div class="updated"><span>Last updated: <b><time datetime="2026-10-09T18:23:39Z">Oct 9, 18:23 UTC</time></b></span><span>Built: <b><time datetime="2026-10-09T18:26:20Z">Oct 9, 18:26 UTC</time></b></span></div></header><div class="stats four"><div><span>Team</span><b>MillerTime</b></div><div><span>Record</span><b>Alive (SAFE)</b></div><div><span>Standing</span><b>7 of 10 alive</b></div><div><span>Flagged starters</span><b>1</b></div></div><div class="surv alive"><div class="big">ALIVE · SAFE</div><div>10 of 14 teams remaining · 4 eliminated</div><div class=muted>Guillotine / elimination: lowest-scoring team is removed each week</div></div><details><summary>Eliminated teams (4)</summary><ul class="elim"><li><b>Week 1</b>: Pancake Block Todd <span class="muted">(69.62 pts)</span></li><li><b>Week 2</b>: Clear Eyes BW Buckeye <span class="muted">(125.20 pts)</span></li><li><b>Week 3</b>: Wishbone Joe Blevins <span class="muted">(216.52 pts)</span></li><li><b>Week 4</b>: Philly Cheesesteaks <span class="muted">(330.02 pts)</span></li></ul><p class="muted small">Standings as of Fri Oct 09 01:46am CDT</p></details><section class="panel"><h3>Week 5 matchup</h3><div class="vs"><div class="side me lead"><div class="tn">MillerTime</div><div class="pts">13.20</div><div class="proj">proj 97.0</div></div><div class="at">vs</div><div class="side opp"><div class="tn">4th Down jacob</div><div class="pts">1.90</div><div class="proj">proj 38.9</div><div class="sub">mgr jacob</div></div></div><p class="muted small">Week 5: Oct 6 - Oct 12 · In progress</p><p class="muted small">Week 5 stats may change if stat corrections are applied by Thursday, Oct 15.</p></section><section class="panel"><h3>Standings (10 teams)</h3><div class="tw"><table><thead><tr><th class="">#</th><th class="">Team</th><th class="n">Season</th><th class="n">Wk pts</th><th class="n">Proj</th></tr></thead><tbody><tr class=""><td>1</td><td>Blindside Raaaaalph</td><td class="n">380.90</td><td class="n">23.5</td><td class="n">108.1</td></tr><tr class=""><td>2</td><td>Joe B&#x27;s</td><td class="n">396.84</td><td class="n">0.0</td><td class="n">105.4</td></tr><tr class=""><td>3</td><td>Friday Night Bobby</td><td class="n">371.56</td><td class="n">0.0</td><td class="n">101.0</td></tr><tr class=""><td>4</td><td>Matt Mode</td><td class="n">338.62</td><td class="n">0.0</td><td class="n">99.2</td></tr><tr class=""><td>5</td><td>Young Gunslinger</td><td class="n">371.76</td><td class="n">0.0</td><td class="n">99.0</td></tr><tr class=""><td>6</td><td>Alex Express</td><td class="n">361.82</td><td class="n">0.0</td><td class="n">95.1</td></tr><tr class="me"><td>7</td><td>MillerTime</td><td class="n">416.22</td><td class="n">13.2</td><td class="n">94.7</td></tr><tr class=""><td>8</td><td>Press Coverage Aiden</td><td class="n">307.02</td><td class="n">0.0</td><td class="n">83.8</td></tr><tr class=""><td>9</td><td>Jarvis&#x27;s Grit</td><td class="n">399.24</td><td class="n">10.5</td><td class="n">82.5</td></tr><tr class=""><td>10</td><td>4th Down jacob</td><td class="n">353.38</td><td class="n">1.9</td><td class="n">24.4</td></tr></tbody></table></div></section><section class="panel"><h3>My roster · <span class="warn">1 starter flagged</span></h3><h4>Starters</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead><tbody><tr class=""><td class="slot">QB</td><td>Tyler Shough <small> NO</small></td><td><span class="b ok">OK</span></td><td class="n">17.5</td><td class="n">–</td></tr><tr class=""><td class="slot">RB</td><td>Javonte Williams <small> DAL</small></td><td><span class="b ok">OK</span></td><td class="n">15.4</td><td class="n">13.2</td></tr><tr class=""><td class="slot">RB</td><td>Quinshon Judkins <small> CLE</small></td><td><span class="b ok">OK</span></td><td class="n">11.7</td><td class="n">–</td></tr><tr class=""><td class="slot">WR</td><td>Jaxon Smith-Njigba <small> SEA</small></td><td><span class="b ok">OK</span></td><td class="n">19.1</td><td class="n">–</td></tr><tr class="flag"><td class="slot">WR</td><td>DJ Moore <small> BUF</small></td><td><span class="b inj-Q">Q</span></td><td class="n">8.5</td><td class="n">–</td></tr><tr class=""><td class="slot">TE</td><td>Trey McBride <small> ARI</small></td><td><span class="b ok">OK</span></td><td class="n">16.1</td><td class="n">–</td></tr><tr class=""><td class="slot">W/R/T</td><td>MarShawn Lloyd <small>RB GB</small></td><td><span class="b ok">OK</span></td><td class="n">8.6</td><td class="n">–</td></tr></tbody></table></div><h4>Bench</h4><div class="tw"><table><thead><tr><th>Slot</th><th>Player</th><th>Status</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead><tbody><tr class=""><td class="slot">BN</td><td>Harold Fannin Jr. <small>TE CLE</small></td><td><span class="b ok">OK</span></td><td class="n">8.9</td><td class="n">–</td></tr><tr class=""><td class="slot">BN</td><td>Michael Wilson <small>WR ARI</small></td><td><span class="b ok">OK</span></td><td class="n">14.3</td><td class="n">–</td></tr><tr class=""><td class="slot">BN</td><td>C.J. Stroud <small>QB HOU</small></td><td><span class="b ok">OK</span></td><td class="n">17.6</td><td class="n">–</td></tr><tr class=""><td class="slot">BN</td><td>Josh Jacobs <small>RB GB</small></td><td><span class="b inj-CEL">CEL</span></td><td class="n">0.0</td><td class="n">–</td></tr><tr class=""><td class="slot">BN</td><td>Xavier Worthy <small>WR KC</small></td><td><span class="b ok">OK</span></td><td class="n">–</td><td class="n">–</td></tr><tr class=""><td class="slot">BN</td><td>Kaelon Black <small>RB SF</small></td><td><span class="b ok">OK</span></td><td class="n">3.3</td><td class="n">–</td></tr><tr class="flag"><td class="slot">BN</td><td>Pat Bryant <small>WR DEN</small></td><td><span class="b inj-D">D</span></td><td class="n">0.0</td><td class="n">–</td></tr></tbody></table></div></section><p class="upd">Yahoo (browser session import) · updated <time datetime="2026-10-09T18:23:39Z">Oct 9, 18:23 UTC</time> · times are UTC</p><a class="back" href="../index.html">&lt; Back to dashboard</a></div></body></html>
