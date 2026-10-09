@@ -3,7 +3,7 @@
     "sleeper_username": "millertime2750",
     "sleeper_user_id": "865267854264664064"
   },
-  "generated": "2026-10-09 18:26:20Z",
+  "generated": "2026-10-09 19:15:54Z",
   "schema_note": "status: live | pending import. Each league has last_updated. Sleeper is refreshed by refresh_sleeper.py (only the Sleeper entry is overwritten); ESPN/Yahoo are imported from data/*_raw.json by import_espn_yahoo.py.",
   "leagues": [
     {
@@ -19,7 +19,7 @@
       "season": "2026",
       "scoring": 0.5,
       "source": "Sleeper API (live)",
-      "last_updated": "2026-10-09 18:26:20Z",
+      "last_updated": "2026-10-09 19:15:54Z",
       "standings_columns": [
         [
           "rank",
@@ -483,7 +483,7 @@
       "season": "2026",
       "week": 5,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 18:21:15Z",
+      "last_updated": "2026-10-09 19:15:21Z",
       "standings_columns": [
         [
           "rank",
@@ -774,7 +774,7 @@
       "season": "2026",
       "week": 5,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 18:21:15Z",
+      "last_updated": "2026-10-09 19:15:21Z",
       "standings_columns": [
         [
           "rank",
@@ -1089,7 +1089,7 @@
       "season": "2026",
       "week": 5,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 18:21:15Z",
+      "last_updated": "2026-10-09 19:15:21Z",
       "standings_columns": [
         [
           "rank",
@@ -1379,7 +1379,7 @@
       "season": "2026",
       "week": 5,
       "source": "Yahoo (browser session import)",
-      "last_updated": "2026-10-09 18:23:39Z",
+      "last_updated": "2026-10-09 19:15:40Z",
       "url": "https://football.fantasysports.yahoo.com/f1/135402",
       "standings_columns": [
         [
@@ -1538,7 +1538,7 @@
             "slot": "WR",
             "injury": null,
             "injury_raw": null,
-            "projection": 17.83,
+            "projection": 17.55,
             "score": null
           },
           {
@@ -1568,7 +1568,7 @@
             "slot": "W/R/T",
             "injury": null,
             "injury_raw": null,
-            "projection": 19.04,
+            "projection": 19.01,
             "score": null
           },
           {
@@ -1685,8 +1685,8 @@
         "opponent_record": "2-2, 5th",
         "my_points": 0.0,
         "opponent_points": 0.0,
-        "my_projection": 226.85,
-        "opponent_projection": 256.57,
+        "my_projection": 226.54,
+        "opponent_projection": 256.74,
         "my_win_prob": "Underdog 36%",
         "opponent_win_prob": "64% Favorite",
         "players_remaining": 11,
@@ -1705,7 +1705,7 @@
       "season": "2026",
       "week": 5,
       "source": "Yahoo (browser session import)",
-      "last_updated": "2026-10-09 18:23:39Z",
+      "last_updated": "2026-10-09 19:15:40Z",
       "url": "https://football.fantasysports.yahoo.com/f1/1599505",
       "format": "Guillotine / elimination: lowest-scoring team is removed each week",
       "standings_columns": [
@@ -1736,7 +1736,7 @@
           "team": "Blindside Raaaaalph",
           "season_pts": 380.9,
           "week_pts": 23.5,
-          "proj": 108.1,
+          "proj": 108.17,
           "ppw": 89.35,
           "is_me": false
         },
@@ -1745,7 +1745,7 @@
           "team": "Joe B's",
           "season_pts": 396.84,
           "week_pts": 0.0,
-          "proj": 105.41,
+          "proj": 105.25,
           "ppw": 99.21,
           "is_me": false
         },
@@ -1754,7 +1754,7 @@
           "team": "Friday Night Bobby",
           "season_pts": 371.56,
           "week_pts": 0.0,
-          "proj": 100.96,
+          "proj": 101.16,
           "ppw": 92.89,
           "is_me": false
         },
@@ -1763,7 +1763,7 @@
           "team": "Matt Mode",
           "season_pts": 338.62,
           "week_pts": 0.0,
-          "proj": 99.2,
+          "proj": 99.16,
           "ppw": 84.66,
           "is_me": false
         },
@@ -1772,7 +1772,7 @@
           "team": "Young Gunslinger",
           "season_pts": 371.76,
           "week_pts": 0.0,
-          "proj": 98.95,
+          "proj": 98.99,
           "ppw": 92.94,
           "is_me": false
         },
@@ -1781,7 +1781,7 @@
           "team": "Alex Express",
           "season_pts": 361.82,
           "week_pts": 0.0,
-          "proj": 95.1,
+          "proj": 95.33,
           "ppw": 90.46,
           "is_me": false
         },
@@ -1790,7 +1790,7 @@
           "team": "MillerTime",
           "season_pts": 416.22,
           "week_pts": 13.2,
-          "proj": 94.74,
+          "proj": 94.76,
           "ppw": 100.76,
           "is_me": true
         },
@@ -1808,7 +1808,7 @@
           "team": "Jarvis's Grit",
           "season_pts": 399.24,
           "week_pts": 10.5,
-          "proj": 82.45,
+          "proj": 82.09,
           "ppw": 97.19,
           "is_me": false
         },
@@ -1817,7 +1817,7 @@
           "team": "4th Down jacob",
           "season_pts": 353.38,
           "week_pts": 1.9,
-          "proj": 24.44,
+          "proj": 24.42,
           "ppw": 87.87,
           "is_me": false
         }
@@ -1831,7 +1831,7 @@
             "slot": "QB",
             "injury": null,
             "injury_raw": null,
-            "projection": 17.53,
+            "projection": 17.54,
             "score": null
           },
           {
@@ -1851,7 +1851,7 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 11.72,
+            "projection": 11.73,
             "score": null
           },
           {
@@ -1903,7 +1903,7 @@
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.88,
+            "projection": 8.82,
             "score": null
           },
           {
@@ -2004,12 +2004,12 @@
         "dates": "Week 5: Oct 6 - Oct 12",
         "status": "In progress",
         "opponent": "4th Down jacob",
-        "opponent_manager": "jacob",
+        "opponent_manager": null,
         "opponent_record": null,
         "my_points": 13.2,
         "opponent_points": 1.9,
-        "my_projection": 96.96,
-        "opponent_projection": 38.93,
+        "my_projection": 96.98,
+        "opponent_projection": 38.91,
         "note": "Week 5 stats may change if stat corrections are applied by Thursday, Oct 15."
       }
     }
