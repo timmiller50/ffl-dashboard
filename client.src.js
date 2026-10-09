@@ -378,9 +378,24 @@
     });
   }
 
+  /* ---------- request ESPN/Yahoo update (opens a prefilled GitHub issue in a new tab; user must press Submit) ---------- */
+  function reqUrl() {
+    var body = 'Please re-pull ESPN and Yahoo data.\n\nRequested from the dashboard at ' + new Date().toISOString() +
+      ' (' + fmtLocal(new Date()) + ' local).';
+    return 'https://github.com/timmiller50/ffl-dashboard/issues/new?labels=update-request&title=' +
+      encodeURIComponent('Update request: ESPN + Yahoo') + '&body=' + encodeURIComponent(body);
+  }
+  function wireRequest() {
+    var a = $('requpd');
+    if (!a) return;
+    a.href = reqUrl();
+    a.addEventListener('click', function () { a.href = reqUrl(); }); // fresh timestamp at click time; default navigation opens new tab
+  }
+
   /* ---------- init ---------- */
   function init() {
     localizeStatic();
+    wireRequest();
     var btn = $('refresh');
     if (btn) btn.addEventListener('click', refresh);
     // quietly load the data file at runtime so pages pick up newly pushed data without a rebuild

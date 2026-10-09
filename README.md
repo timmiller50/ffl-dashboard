@@ -6,3 +6,4 @@
 - Pages are pre-rendered (work without JS) and also carry `client.src.js` (inlined by build_html.py, no external assets). The **Refresh** button re-fetches data/leagues.json (cache-busted), does a live Sleeper pull in the browser (state, league, users, rosters, matchups for the Megalabowl; names/injuries/projections come from the saved data) and re-renders in place. ESPN/Yahoo only change when re-pulled + pushed.
 - Each league has `last_updated`; the toolbar shows per-platform "Last pulled" times in the viewer's local time.
 - If you change the JS renderers, keep them in sync with build_html.py (the pre-rendered HTML and JS output should be identical).
+- The green **Request ESPN/Yahoo update** button opens a prefilled GitHub issue (label `update-request`, title "Update request: ESPN + Yahoo", timestamped body) in a new tab; the user must press "Submit new issue". Nothing is created automatically.

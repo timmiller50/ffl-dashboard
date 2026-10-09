@@ -255,10 +255,17 @@ def chips_html(doc, leagues):
     return chips
 
 
+REQ_URL = ("https://github.com/timmiller50/ffl-dashboard/issues/new?labels=update-request"
+           "&title=Update+request%3A+ESPN+%2B+Yahoo&body=Please+re-pull+ESPN+and+Yahoo+data.")
+
+
 def toolbar(doc, leagues):
     return ('<div class="toolbar"><div class="trow">'
             '<button type="button" id="refresh" class="refresh">&#8635; Refresh</button>'
-            '<span id="rstatus" class="rstatus" role="status" aria-live="polite"></span></div>'
+            '<span id="rstatus" class="rstatus" role="status" aria-live="polite"></span>'
+            f'<a id="requpd" class="refresh reqbtn" href="{esc(REQ_URL)}" target="_blank" rel="noopener noreferrer">Request ESPN/Yahoo update</a>'
+            '<span class="reqnote">Opens GitHub in a new tab. Press <b>Submit new issue</b> there to send the request; '
+            'the update usually lands after the next check.</span></div>'
             f'<div class="updated" id="chips">{chips_html(doc, leagues)}</div>'
             '<p class="rnote">Refresh reloads the saved data and pulls Sleeper live. ESPN and Yahoo update only when re-pulled; '
             'Refresh then shows the latest saved pull. Times show in your local time zone.</p></div>')
@@ -363,6 +370,8 @@ body.detail table{font-size:14px}
 .refresh.busy::before{content:"";display:inline-block;width:12px;height:12px;margin-right:8px;border:2px solid #fff;border-right-color:transparent;border-radius:50%;vertical-align:-2px;animation:sp .8s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
 .rstatus{font-size:13px;color:#b8c4d4;min-width:0;overflow-wrap:anywhere}.rstatus.s-ok{color:#7fe0b0}.rstatus.s-warn{color:#f0b060}.rstatus.s-err{color:#ff8a8a}
+.reqbtn{display:inline-block;text-decoration:none;background:#2f855a;line-height:24px;box-sizing:border-box}.reqbtn:hover{background:#38a169}
+.reqnote{font-size:12px;color:#9ab;flex:1 1 220px;min-width:0}
 .rnote{margin:0;font-size:12px;color:#9ab}
 .updated .lbl{background:none;border:0;padding:3px 2px;color:#9ab}
 .updated small{color:#7fe0b0}
