@@ -245,6 +245,8 @@ footer{margin-top:20px;color:#678;font-size:12px}
 
 def render(doc):
     leagues = doc["leagues"]
+    PRIORITY = ["43670", "135402", "1401978044331089922"]
+    leagues = sorted(leagues, key=lambda l: PRIORITY.index(str(l.get("league_id") or l.get("id"))) if str(l.get("league_id") or l.get("id")) in PRIORITY else len(PRIORITY))
     live = [l for l in leagues if l.get("status") == "live"]
     # last-updated per platform (latest of its leagues)
     plat_ts = {}
