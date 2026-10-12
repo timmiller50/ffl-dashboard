@@ -3,7 +3,7 @@
     "sleeper_username": "millertime2750",
     "sleeper_user_id": "865267854264664064"
   },
-  "generated": "2026-10-09 20:08:54Z",
+  "generated": "2026-10-12 14:13:09Z",
   "schema_note": "status: live | pending import. Each league has last_updated. Sleeper is refreshed by refresh_sleeper.py (only the Sleeper entry is overwritten); ESPN/Yahoo are imported from data/*_raw.json by import_espn_yahoo.py.",
   "leagues": [
     {
@@ -19,7 +19,7 @@
       "season": "2026",
       "scoring": 0.5,
       "source": "Sleeper API (live)",
-      "last_updated": "2026-10-09 20:08:54Z",
+      "last_updated": "2026-10-12 14:13:09Z",
       "standings_columns": [
         [
           "rank",
@@ -211,32 +211,32 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "QB",
-            "projection": 19.49,
-            "score": 0.0
+            "projection": 19.9,
+            "score": 37.3
           },
           {
             "id": "12527",
             "name": "Ashton Jeanty",
             "pos": "RB",
             "team": "LV",
-            "injury": "Q",
-            "injury_status": "Questionable",
-            "injury_body_part": "Ankle",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
             "slot": "RB",
-            "projection": 11.51,
-            "score": 0.0
+            "projection": 11.14,
+            "score": 10.2
           },
           {
             "id": "12512",
             "name": "Quinshon Judkins",
             "pos": "RB",
             "team": "CLE",
-            "injury": null,
-            "injury_status": "Healthy",
-            "injury_body_part": null,
+            "injury": "Q",
+            "injury_status": "Questionable",
+            "injury_body_part": "Lower Leg",
             "slot": "RB",
-            "projection": 10.53,
-            "score": 0.0
+            "projection": 10.52,
+            "score": 7.9
           },
           {
             "id": "9493",
@@ -247,7 +247,7 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "WR",
-            "projection": 17.37,
+            "projection": 17.49,
             "score": 0.0
           },
           {
@@ -255,12 +255,12 @@
             "name": "Chris Olave",
             "pos": "WR",
             "team": "NO",
-            "injury": "Q",
-            "injury_status": "Questionable",
-            "injury_body_part": "Foot",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
             "slot": "WR",
-            "projection": 13.56,
-            "score": 0.0
+            "projection": 13.48,
+            "score": 6.6
           },
           {
             "id": "12506",
@@ -271,8 +271,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "TE",
-            "projection": 8.71,
-            "score": 0.0
+            "projection": 8.78,
+            "score": 0.9
           },
           {
             "id": "10232",
@@ -283,20 +283,20 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "FLEX",
-            "projection": 13.42,
-            "score": 0.0
+            "projection": 13.63,
+            "score": 5.38
           },
           {
             "id": "7611",
             "name": "Rhamondre Stevenson",
             "pos": "RB",
             "team": "NE",
-            "injury": "Q",
-            "injury_status": "Questionable",
-            "injury_body_part": "Undisclosed",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
             "slot": "FLEX",
-            "projection": 11.68,
-            "score": 0.0
+            "projection": 11.71,
+            "score": 17.3
           },
           {
             "id": "CHI",
@@ -307,8 +307,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "DEF",
-            "projection": 6.89,
-            "score": 0.0
+            "projection": 6.92,
+            "score": -3.0
           }
         ],
         "bench": [
@@ -321,8 +321,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "BN",
-            "projection": 11.64,
-            "score": 0.0
+            "projection": 11.74,
+            "score": 14.2
           },
           {
             "id": "11563",
@@ -333,8 +333,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "BN",
-            "projection": 17.52,
-            "score": 0.0
+            "projection": 17.6,
+            "score": 11.92
           },
           {
             "id": "12489",
@@ -345,8 +345,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "BN",
-            "projection": 10.06,
-            "score": 0.0
+            "projection": 10.09,
+            "score": 1.0
           },
           {
             "id": "13414",
@@ -357,8 +357,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "BN",
-            "projection": 2.54,
-            "score": 0.0
+            "projection": 2.12,
+            "score": 2.2
           },
           {
             "id": "9502",
@@ -377,12 +377,12 @@
       },
       "matchup": {
         "week": 5,
-        "my_points": 0.0,
+        "my_points": 82.58,
         "opponent": "rileyshannon",
         "opponent_record": "4-4",
-        "opponent_points": 0.0,
-        "my_projection": 113.2,
-        "opponent_projection": 71.8,
+        "opponent_points": 75.8,
+        "my_projection": 113.6,
+        "opponent_projection": 98.0,
         "opponent_starters": [
           {
             "id": "421",
@@ -425,9 +425,9 @@
             "name": "Justin Jefferson",
             "pos": "WR",
             "team": "MIN",
-            "injury": "Q",
-            "injury_status": "Questionable",
-            "injury_body_part": "Ankle",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
             "slot": null,
             "projection": null,
             "score": null
@@ -437,9 +437,9 @@
             "name": "Roman Wilson",
             "pos": "WR",
             "team": "PIT",
-            "injury": null,
-            "injury_status": "Healthy",
-            "injury_body_part": null,
+            "injury": "O",
+            "injury_status": "Out",
+            "injury_body_part": "Finger",
             "slot": null,
             "projection": null,
             "score": null
@@ -449,6 +449,30 @@
             "name": "Tyler Higbee",
             "pos": "TE",
             "team": "LAR",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
+            "slot": null,
+            "projection": null,
+            "score": null
+          },
+          {
+            "id": "6801",
+            "name": "Tee Higgins",
+            "pos": "WR",
+            "team": "CIN",
+            "injury": null,
+            "injury_status": "Healthy",
+            "injury_body_part": null,
+            "slot": null,
+            "projection": null,
+            "score": null
+          },
+          {
+            "id": "5927",
+            "name": "Terry McLaurin",
+            "pos": "WR",
+            "team": "WAS",
             "injury": null,
             "injury_status": "Healthy",
             "injury_body_part": null,
