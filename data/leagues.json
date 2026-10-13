@@ -3,7 +3,7 @@
     "sleeper_username": "millertime2750",
     "sleeper_user_id": "865267854264664064"
   },
-  "generated": "2026-10-12 14:13:09Z",
+  "generated": "2026-10-13 12:22:05Z",
   "schema_note": "status: live | pending import. Each league has last_updated. Sleeper is refreshed by refresh_sleeper.py (only the Sleeper entry is overwritten); ESPN/Yahoo are imported from data/*_raw.json by import_espn_yahoo.py.",
   "leagues": [
     {
@@ -11,15 +11,15 @@
       "name": "The Megalabowl 2026",
       "league_id": "1401978044331089922",
       "team_name": "MillerTime2750",
-      "record": "4-4",
-      "standing": "6 of 12",
+      "record": "4-6",
+      "standing": "9 of 12",
       "status": "live",
       "league_status": "in_season",
       "week": 5,
       "season": "2026",
       "scoring": 0.5,
       "source": "Sleeper API (live)",
-      "last_updated": "2026-10-12 14:13:09Z",
+      "last_updated": "2026-10-13 12:22:05Z",
       "standings_columns": [
         [
           "rank",
@@ -47,25 +47,25 @@
           "roster_id": 4,
           "team": "Let Likely Cook",
           "owner": "IbuPR0fen43",
-          "wins": 7,
+          "wins": 9,
           "losses": 1,
           "ties": 0,
-          "pf": 620.76,
-          "pa": 464.44,
-          "record": "7-1",
+          "pf": 793.5,
+          "pa": 591.88,
+          "record": "9-1",
           "is_me": false,
           "rank": 1
         },
         {
-          "roster_id": 10,
-          "team": "Stenner",
-          "owner": "Stenner",
+          "roster_id": 9,
+          "team": "TaWee",
+          "owner": "TaWee",
           "wins": 6,
-          "losses": 2,
+          "losses": 4,
           "ties": 0,
-          "pf": 486.9,
-          "pa": 473.08,
-          "record": "6-2",
+          "pf": 615.56,
+          "pa": 594.88,
+          "record": "6-4",
           "is_me": false,
           "rank": 2
         },
@@ -73,116 +73,116 @@
           "roster_id": 1,
           "team": "Gordon Leadfoot",
           "owner": "Thunderboots",
-          "wins": 5,
-          "losses": 3,
+          "wins": 6,
+          "losses": 4,
           "ties": 0,
-          "pf": 479.48,
-          "pa": 449.9,
-          "record": "5-3",
+          "pf": 611.06,
+          "pa": 585.04,
+          "record": "6-4",
           "is_me": false,
           "rank": 3
+        },
+        {
+          "roster_id": 10,
+          "team": "Stenner",
+          "owner": "Stenner",
+          "wins": 6,
+          "losses": 4,
+          "ties": 0,
+          "pf": 587.36,
+          "pa": 615.04,
+          "record": "6-4",
+          "is_me": false,
+          "rank": 4
         },
         {
           "roster_id": 3,
           "team": "Draft Punk",
           "owner": "JamesOrtega",
-          "wins": 5,
-          "losses": 3,
-          "ties": 0,
-          "pf": 438.56,
-          "pa": 373.88,
-          "record": "5-3",
-          "is_me": false,
-          "rank": 4
-        },
-        {
-          "roster_id": 9,
-          "team": "TaWee",
-          "owner": "TaWee",
-          "wins": 4,
+          "wins": 6,
           "losses": 4,
           "ties": 0,
-          "pf": 480.42,
-          "pa": 463.3,
-          "record": "4-4",
+          "pf": 538.78,
+          "pa": 443.94,
+          "record": "6-4",
           "is_me": false,
           "rank": 5
+        },
+        {
+          "roster_id": 7,
+          "team": "andrew1089",
+          "owner": "andrew1089",
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "pf": 646.96,
+          "pa": 682.8,
+          "record": "5-5",
+          "is_me": false,
+          "rank": 6
+        },
+        {
+          "roster_id": 2,
+          "team": "rileyshannon",
+          "owner": "rileyshannon",
+          "wins": 5,
+          "losses": 5,
+          "ties": 0,
+          "pf": 536.36,
+          "pa": 495.66,
+          "record": "5-5",
+          "is_me": false,
+          "rank": 7
+        },
+        {
+          "roster_id": 12,
+          "team": "LandonP1",
+          "owner": "LandonP1",
+          "wins": 4,
+          "losses": 6,
+          "ties": 0,
+          "pf": 598.64,
+          "pa": 692.92,
+          "record": "4-6",
+          "is_me": false,
+          "rank": 8
         },
         {
           "roster_id": 5,
           "team": "MillerTime2750",
           "owner": "MillerTime2750",
           "wins": 4,
-          "losses": 4,
+          "losses": 6,
           "ties": 0,
-          "pf": 476.04,
-          "pa": 502.26,
-          "record": "4-4",
+          "pf": 588.02,
+          "pa": 626.18,
+          "record": "4-6",
           "is_me": true,
-          "rank": 6
+          "rank": 9
+        },
+        {
+          "roster_id": 8,
+          "team": "All the TE\u2019s",
+          "owner": "Dorqstarr",
+          "wins": 4,
+          "losses": 6,
+          "ties": 0,
+          "pf": 580.34,
+          "pa": 490.3,
+          "record": "4-6",
+          "is_me": false,
+          "rank": 10
         },
         {
           "roster_id": 6,
           "team": "BakerBone",
           "owner": "BakerBone",
           "wins": 4,
-          "losses": 4,
-          "ties": 0,
-          "pf": 434.46,
-          "pa": 528.74,
-          "record": "4-4",
-          "is_me": false,
-          "rank": 7
-        },
-        {
-          "roster_id": 2,
-          "team": "rileyshannon",
-          "owner": "rileyshannon",
-          "wins": 4,
-          "losses": 4,
-          "ties": 0,
-          "pf": 412.44,
-          "pa": 383.68,
-          "record": "4-4",
-          "is_me": false,
-          "rank": 8
-        },
-        {
-          "roster_id": 7,
-          "team": "andrew1089",
-          "owner": "andrew1089",
-          "wins": 3,
-          "losses": 5,
-          "ties": 0,
-          "pf": 490.76,
-          "pa": 566.6,
-          "record": "3-5",
-          "is_me": false,
-          "rank": 9
-        },
-        {
-          "roster_id": 12,
-          "team": "LandonP1",
-          "owner": "LandonP1",
-          "wins": 3,
-          "losses": 5,
-          "ties": 0,
-          "pf": 471.2,
-          "pa": 520.18,
-          "record": "3-5",
-          "is_me": false,
-          "rank": 10
-        },
-        {
-          "roster_id": 8,
-          "team": "All the TE\u2019s",
-          "owner": "Dorqstarr",
-          "wins": 2,
           "losses": 6,
           "ties": 0,
-          "pf": 438.38,
-          "pa": 389.84,
-          "record": "2-6",
+          "pf": 504.52,
+          "pa": 628.96,
+          "record": "4-6",
           "is_me": false,
           "rank": 11
         },
@@ -191,11 +191,11 @@
           "team": "Big Dawgs",
           "owner": "BillBrisk",
           "wins": 1,
-          "losses": 7,
+          "losses": 9,
           "ties": 0,
-          "pf": 368.18,
-          "pa": 481.68,
-          "record": "1-7",
+          "pf": 484.38,
+          "pa": 637.88,
+          "record": "1-9",
           "is_me": false,
           "rank": 12
         }
@@ -247,8 +247,8 @@
             "injury_status": "Healthy",
             "injury_body_part": null,
             "slot": "WR",
-            "projection": 17.49,
-            "score": 0.0
+            "projection": 17.47,
+            "score": 29.4
           },
           {
             "id": "8144",
@@ -377,12 +377,12 @@
       },
       "matchup": {
         "week": 5,
-        "my_points": 82.58,
+        "my_points": 111.98,
         "opponent": "rileyshannon",
-        "opponent_record": "4-4",
-        "opponent_points": 75.8,
-        "my_projection": 113.6,
-        "opponent_projection": 98.0,
+        "opponent_record": "5-5",
+        "opponent_points": 123.92,
+        "my_projection": 113.5,
+        "opponent_projection": 97.2,
         "opponent_starters": [
           {
             "id": "421",
@@ -501,13 +501,13 @@
       "league_id": "1121237090",
       "team_id": 9,
       "team_name": "MillerTime",
-      "record": "1-3",
-      "standing": "8th of 10",
+      "record": "2-3",
+      "standing": "6th of 10",
       "status": "live",
       "season": "2026",
-      "week": 5,
+      "week": 6,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 20:07:04Z",
+      "last_updated": "2026-10-13 12:22:03Z",
       "standings_columns": [
         [
           "rank",
@@ -530,86 +530,76 @@
         {
           "rank": 1,
           "team": "I bet the Nabers know my name",
-          "record": "3-1",
-          "pf": 557.86,
+          "record": "4-1",
+          "pf": 691.96,
           "is_me": false
         },
         {
           "rank": 2,
           "team": "TEAM NAME TBD",
-          "record": "3-1",
-          "pf": 483.82,
+          "record": "4-1",
+          "pf": 603.66,
           "is_me": false
         },
         {
           "rank": 3,
           "team": "Sam's Smart Team",
-          "record": "3-1",
-          "pf": 477.3,
+          "record": "4-1",
+          "pf": 586.96,
           "is_me": false
         },
         {
           "rank": 4,
-          "team": "cason's Competitive Team",
-          "record": "2-2",
-          "pf": 541.26,
+          "team": "Jason's Scary Team",
+          "record": "3-2",
+          "pf": 598.12,
           "is_me": false
         },
         {
           "rank": 5,
-          "team": "Goff Balls",
-          "record": "2-2",
-          "pf": 484.84,
+          "team": "cason's Competitive Team",
+          "record": "2-3",
+          "pf": 670.54,
           "is_me": false
         },
         {
           "rank": 6,
-          "team": "Corban's the best team",
-          "record": "2-2",
-          "pf": 440.48,
-          "is_me": false
+          "team": "MillerTime",
+          "record": "2-3",
+          "pf": 607.24,
+          "is_me": true
         },
         {
           "rank": 7,
-          "team": "Jason's Scary Team",
-          "record": "2-2",
-          "pf": 439.66,
+          "team": "Goff Balls",
+          "record": "2-3",
+          "pf": 593.02,
           "is_me": false
         },
         {
           "rank": 8,
-          "team": "MillerTime",
-          "record": "1-3",
-          "pf": 461.92,
-          "is_me": true
+          "team": "Corban's the best team",
+          "record": "2-3",
+          "pf": 507.28,
+          "is_me": false
         },
         {
           "rank": 9,
           "team": "Depressed cowboys fan",
-          "record": "1-3",
-          "pf": 406.44,
+          "record": "1-4",
+          "pf": 506.84,
           "is_me": false
         },
         {
           "rank": 10,
           "team": "JJ mcgoat",
-          "record": "1-3",
-          "pf": 358.8,
+          "record": "1-4",
+          "pf": 431.6,
           "is_me": false
         }
       ],
       "my_roster": {
         "starters": [
-          {
-            "name": "Matthew Stafford",
-            "pos": "QB",
-            "team": "LAR",
-            "slot": "QB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 18.2,
-            "score": null
-          },
           {
             "name": "Christian McCaffrey",
             "pos": "RB",
@@ -617,17 +607,7 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 18.7,
-            "score": null
-          },
-          {
-            "name": "Blake Corum",
-            "pos": "RB",
-            "team": "LAR",
-            "slot": "RB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 8.4,
+            "projection": 22.19,
             "score": null
           },
           {
@@ -635,9 +615,19 @@
             "pos": "WR",
             "team": "MIN",
             "slot": "WR",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 18.5,
+            "injury": null,
+            "injury_raw": null,
+            "projection": 0.0,
+            "score": null
+          },
+          {
+            "name": "Kenneth Walker III",
+            "pos": "RB",
+            "team": "KC",
+            "slot": "RB",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 22.73,
             "score": null
           },
           {
@@ -647,7 +637,7 @@
             "slot": "WR",
             "injury": null,
             "injury_raw": null,
-            "projection": 14.7,
+            "projection": 14.64,
             "score": null
           },
           {
@@ -657,7 +647,7 @@
             "slot": "TE",
             "injury": null,
             "injury_raw": null,
-            "projection": 7.1,
+            "projection": 8.39,
             "score": null
           },
           {
@@ -665,19 +655,29 @@
             "pos": "RB",
             "team": "NYG",
             "slot": "FLEX",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 13.2,
+            "injury": null,
+            "injury_raw": null,
+            "projection": 13.23,
             "score": null
           },
           {
-            "name": "Lions",
+            "name": "Matthew Stafford",
+            "pos": "QB",
+            "team": "LAR",
+            "slot": "QB",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 18.64,
+            "score": null
+          },
+          {
+            "name": "Lions D/ST",
             "pos": "D/ST",
             "team": "DET",
             "slot": "D/ST",
             "injury": null,
             "injury_raw": null,
-            "projection": 5.1,
+            "projection": 0.0,
             "score": null
           },
           {
@@ -687,29 +687,19 @@
             "slot": "K",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.5,
+            "projection": 8.77,
             "score": null
           }
         ],
         "bench": [
           {
-            "name": "Kenneth Walker III",
-            "pos": "RB",
-            "team": "KC",
-            "slot": "Bench",
-            "injury": null,
-            "injury_raw": null,
-            "projection": null,
-            "score": null
-          },
-          {
             "name": "Marvin Harrison Jr.",
             "pos": "WR",
-            "team": "ARI",
+            "team": "HOU",
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 6.7,
+            "projection": 3.41,
             "score": null
           },
           {
@@ -717,9 +707,9 @@
             "pos": "RB",
             "team": "PIT",
             "slot": "Bench",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 7.9,
+            "injury": "O",
+            "injury_raw": "O",
+            "projection": 6.38,
             "score": null
           },
           {
@@ -733,13 +723,23 @@
             "score": null
           },
           {
+            "name": "Blake Corum",
+            "pos": "RB",
+            "team": "LAR",
+            "slot": "Bench",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 9.38,
+            "score": null
+          },
+          {
             "name": "Tyler Shough",
             "pos": "QB",
             "team": "NO",
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 16.5,
+            "projection": 16.82,
             "score": null
           },
           {
@@ -749,7 +749,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 9.7,
+            "projection": 9.75,
             "score": null
           },
           {
@@ -759,7 +759,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 9.8,
+            "projection": 10.85,
             "score": null
           }
         ],
@@ -777,13 +777,13 @@
         ]
       },
       "matchup": {
-        "week": 5,
-        "opponent": "JJ mcgoat",
-        "opponent_record": "1-3, 10th",
+        "week": 6,
+        "opponent": "cason's Competitive Team",
+        "opponent_record": "2-3, 5th",
         "my_points": 0.0,
-        "opponent_points": 17.2,
-        "my_projection": 112.4,
-        "opponent_projection": 91.1
+        "opponent_points": 0.0,
+        "my_projection": 108.6,
+        "opponent_projection": 101.7
       }
     },
     {
@@ -792,13 +792,13 @@
       "league_id": "43670",
       "team_id": 12,
       "team_name": "MillerTime",
-      "record": "4-0",
+      "record": "5-0",
       "standing": "1st of 12",
       "status": "live",
       "season": "2026",
-      "week": 5,
+      "week": 6,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 20:07:04Z",
+      "last_updated": "2026-10-13 12:22:03Z",
       "standings_columns": [
         [
           "rank",
@@ -821,98 +821,98 @@
         {
           "rank": 1,
           "team": "MillerTime",
-          "record": "4-0",
-          "pf": 602.08,
+          "record": "5-0",
+          "pf": 726.84,
           "is_me": true
         },
         {
           "rank": 2,
           "team": "Fighting Flahertys",
-          "record": "4-0",
-          "pf": 556.24,
+          "record": "5-0",
+          "pf": 705.8,
           "is_me": false
         },
         {
           "rank": 3,
-          "team": "Bolieve in Nix",
-          "record": "3-1",
-          "pf": 494.0,
+          "team": "Goon Squad",
+          "record": "3-2",
+          "pf": 658.64,
           "is_me": false
         },
         {
           "rank": 4,
-          "team": "Mmm Watt you say",
-          "record": "3-1",
-          "pf": 474.36,
+          "team": "Bolieve in Nix",
+          "record": "3-2",
+          "pf": 633.32,
           "is_me": false
         },
         {
           "rank": 5,
-          "team": "Goon Squad",
-          "record": "2-2",
-          "pf": 488.1,
+          "team": "THE Dailey Show",
+          "record": "3-2",
+          "pf": 613.92,
           "is_me": false
         },
         {
           "rank": 6,
-          "team": "THE Dailey Show",
-          "record": "2-2",
-          "pf": 442.28,
+          "team": "Mmm Watt you say",
+          "record": "3-2",
+          "pf": 591.08,
           "is_me": false
         },
         {
           "rank": 7,
-          "team": "Curry-Up Offense",
-          "record": "2-2",
-          "pf": 430.98,
+          "team": "jason's Scary Team",
+          "record": "2-3",
+          "pf": 641.5,
           "is_me": false
         },
         {
           "rank": 8,
-          "team": "Howell U Doin",
-          "record": "1-3",
-          "pf": 536.56,
+          "team": "Da Schmidt Haus",
+          "record": "2-3",
+          "pf": 612.92,
           "is_me": false
         },
         {
           "rank": 9,
-          "team": "jason's Scary Team",
-          "record": "1-3",
-          "pf": 515.48,
+          "team": "Curry-Up Offense",
+          "record": "2-3",
+          "pf": 548.88,
           "is_me": false
         },
         {
           "rank": 10,
-          "team": "Da Schmidt Haus",
-          "record": "1-3",
-          "pf": 498.02,
+          "team": "Howell U Doin",
+          "record": "1-4",
+          "pf": 675.86,
           "is_me": false
         },
         {
           "rank": 11,
           "team": "SHOUGH'IT",
-          "record": "1-3",
-          "pf": 307.72,
+          "record": "1-4",
+          "pf": 417.16,
           "is_me": false
         },
         {
           "rank": 12,
           "team": "I'M NOT A NUGGET",
-          "record": "0-4",
-          "pf": 365.68,
+          "record": "0-5",
+          "pf": 480.98,
           "is_me": false
         }
       ],
       "my_roster": {
         "starters": [
           {
-            "name": "Brock Purdy",
-            "pos": "QB",
-            "team": "SF",
-            "slot": "QB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 23.3,
+            "name": "CeeDee Lamb",
+            "pos": "WR",
+            "team": "DAL",
+            "slot": "WR/TE",
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 20.14,
             "score": null
           },
           {
@@ -922,28 +922,28 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 18.6,
+            "projection": 23.3,
             "score": null
           },
           {
-            "name": "Ollie Gordon II",
-            "pos": "RB",
-            "team": "MIA",
-            "slot": "RB",
+            "name": "Brock Purdy",
+            "pos": "QB",
+            "team": "SF",
+            "slot": "QB",
             "injury": null,
             "injury_raw": null,
-            "projection": 11.7,
+            "projection": 28.27,
             "score": null
           },
           {
-            "name": "CeeDee Lamb",
-            "pos": "WR",
-            "team": "DAL",
-            "slot": "WR/TE",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 20.8,
-            "score": 2.9
+            "name": "Steelers D/ST",
+            "pos": "D/ST",
+            "team": "PIT",
+            "slot": "D/ST",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 10.81,
+            "score": null
           },
           {
             "name": "Matthew Golden",
@@ -952,27 +952,7 @@
             "slot": "WR/TE",
             "injury": null,
             "injury_raw": null,
-            "projection": 13.7,
-            "score": null
-          },
-          {
-            "name": "Trey McBride",
-            "pos": "TE",
-            "team": "ARI",
-            "slot": "WR/TE",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 19.8,
-            "score": null
-          },
-          {
-            "name": "Steelers",
-            "pos": "D/ST",
-            "team": "PIT",
-            "slot": "D/ST",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 10.3,
+            "projection": 17.45,
             "score": null
           },
           {
@@ -982,7 +962,27 @@
             "slot": "K",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.7,
+            "projection": 9.05,
+            "score": null
+          },
+          {
+            "name": "Trey McBride",
+            "pos": "TE",
+            "team": "ARI",
+            "slot": "WR/TE",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 16.94,
+            "score": null
+          },
+          {
+            "name": "Tyler Allgeier",
+            "pos": "RB",
+            "team": "ARI",
+            "slot": "RB",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 6.41,
             "score": null
           }
         ],
@@ -994,8 +994,8 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 10.3,
-            "score": 17.2
+            "projection": 11.41,
+            "score": null
           },
           {
             "name": "Tyler Warren",
@@ -1004,7 +1004,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 12.3,
+            "projection": 12.87,
             "score": null
           },
           {
@@ -1024,17 +1024,17 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 16.2,
+            "projection": 17.31,
             "score": null
           },
           {
-            "name": "Bears",
+            "name": "Bears D/ST",
             "pos": "D/ST",
             "team": "CHI",
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 9.5,
+            "projection": 6.91,
             "score": null
           },
           {
@@ -1044,17 +1044,17 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.2,
+            "projection": 8.51,
             "score": null
           },
           {
-            "name": "Tyler Allgeier",
+            "name": "Ollie Gordon II",
             "pos": "RB",
-            "team": "ARI",
+            "team": "MIA",
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 9.1,
+            "projection": 0.0,
             "score": null
           },
           {
@@ -1062,9 +1062,9 @@
             "pos": "RB",
             "team": "MIA",
             "slot": "Bench",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 8.1,
+            "injury": null,
+            "injury_raw": null,
+            "projection": 0.0,
             "score": null
           }
         ],
@@ -1092,13 +1092,13 @@
         ]
       },
       "matchup": {
-        "week": 5,
-        "opponent": "I'M NOT A NUGGET",
-        "opponent_record": "0-4, 12th",
-        "my_points": 2.9,
-        "opponent_points": 37.5,
-        "my_projection": 109.0,
-        "opponent_projection": 130.8
+        "week": 6,
+        "opponent": "Bolieve in Nix",
+        "opponent_record": "3-2, 4th",
+        "my_points": 0.0,
+        "opponent_points": 0.0,
+        "my_projection": 132.4,
+        "opponent_projection": 68.5
       }
     },
     {
@@ -1107,13 +1107,13 @@
       "league_id": "689864242",
       "team_id": 1,
       "team_name": "MillerTime",
-      "record": "2-2",
+      "record": "2-3",
       "standing": "5th of 10",
       "status": "live",
       "season": "2026",
-      "week": 5,
+      "week": 6,
       "source": "ESPN (browser session import)",
-      "last_updated": "2026-10-09 20:07:04Z",
+      "last_updated": "2026-10-13 12:22:03Z",
       "standings_columns": [
         [
           "rank",
@@ -1136,86 +1136,76 @@
         {
           "rank": 1,
           "team": "Midnight Tokers",
-          "record": "3-1",
-          "pf": 580.7,
+          "record": "4-1",
+          "pf": 718.74,
           "is_me": false
         },
         {
           "rank": 2,
           "team": "Lane Train",
-          "record": "3-1",
-          "pf": 513.76,
+          "record": "4-1",
+          "pf": 635.56,
           "is_me": false
         },
         {
           "rank": 3,
           "team": "Herd of Donkeys 17",
-          "record": "3-1",
-          "pf": 495.88,
+          "record": "3-2",
+          "pf": 624.34,
           "is_me": false
         },
         {
           "rank": 4,
-          "team": "Craig's Competitive Team",
-          "record": "2-2",
-          "pf": 491.38,
+          "team": "1st and",
+          "record": "2-3",
+          "pf": 654.68,
           "is_me": false
         },
         {
           "rank": 5,
           "team": "MillerTime",
-          "record": "2-2",
-          "pf": 490.68,
+          "record": "2-3",
+          "pf": 623.42,
           "is_me": true
         },
         {
           "rank": 6,
-          "team": "Gut Punch",
-          "record": "2-2",
-          "pf": 438.26,
+          "team": "Craig's Competitive Team",
+          "record": "2-3",
+          "pf": 587.68,
           "is_me": false
         },
         {
           "rank": 7,
-          "team": "Big body catches",
-          "record": "2-2",
-          "pf": 386.4,
+          "team": "Red Comet",
+          "record": "2-3",
+          "pf": 553.58,
           "is_me": false
         },
         {
           "rank": 8,
-          "team": "1st and",
-          "record": "1-3",
-          "pf": 519.56,
+          "team": "Gut Punch",
+          "record": "2-3",
+          "pf": 519.96,
           "is_me": false
         },
         {
           "rank": 9,
-          "team": "Red Comet",
-          "record": "1-3",
-          "pf": 413.58,
+          "team": "Dakota's Dangerous Team",
+          "record": "2-3",
+          "pf": 477.62,
           "is_me": false
         },
         {
           "rank": 10,
-          "team": "Dakota's Dangerous Team",
-          "record": "1-3",
-          "pf": 369.92,
+          "team": "Big body catches",
+          "record": "2-3",
+          "pf": 459.74,
           "is_me": false
         }
       ],
       "my_roster": {
         "starters": [
-          {
-            "name": "Brock Purdy",
-            "pos": "QB",
-            "team": "SF",
-            "slot": "QB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 17.9,
-            "score": null
-          },
           {
             "name": "Christian McCaffrey",
             "pos": "RB",
@@ -1223,17 +1213,7 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 18.7,
-            "score": null
-          },
-          {
-            "name": "Chase Brown",
-            "pos": "RB",
-            "team": "CIN",
-            "slot": "RB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 17.4,
+            "projection": 22.19,
             "score": null
           },
           {
@@ -1241,9 +1221,9 @@
             "pos": "WR",
             "team": "NYG",
             "slot": "WR",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 13.5,
+            "injury": null,
+            "injury_raw": null,
+            "projection": 17.41,
             "score": null
           },
           {
@@ -1253,7 +1233,7 @@
             "slot": "WR",
             "injury": null,
             "injury_raw": null,
-            "projection": 15.5,
+            "projection": 15.52,
             "score": null
           },
           {
@@ -1263,7 +1243,7 @@
             "slot": "TE",
             "injury": null,
             "injury_raw": null,
-            "projection": 13.1,
+            "projection": 0.0,
             "score": null
           },
           {
@@ -1273,17 +1253,27 @@
             "slot": "FLEX",
             "injury": null,
             "injury_raw": null,
-            "projection": 16.8,
+            "projection": 13.33,
             "score": null
           },
           {
-            "name": "Steelers",
+            "name": "Brock Purdy",
+            "pos": "QB",
+            "team": "SF",
+            "slot": "QB",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 21.38,
+            "score": null
+          },
+          {
+            "name": "Steelers D/ST",
             "pos": "D/ST",
             "team": "PIT",
             "slot": "D/ST",
             "injury": null,
             "injury_raw": null,
-            "projection": 6.8,
+            "projection": 7.03,
             "score": null
           },
           {
@@ -1293,11 +1283,31 @@
             "slot": "K",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.5,
+            "projection": 8.77,
+            "score": null
+          },
+          {
+            "name": "Tony Pollard",
+            "pos": "RB",
+            "team": "TEN",
+            "slot": "RB",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 14.14,
             "score": null
           }
         ],
         "bench": [
+          {
+            "name": "Chase Brown",
+            "pos": "RB",
+            "team": "CIN",
+            "slot": "Bench",
+            "injury": null,
+            "injury_raw": null,
+            "projection": 0.0,
+            "score": null
+          },
           {
             "name": "Lamar Jackson",
             "pos": "QB",
@@ -1305,7 +1315,7 @@
             "slot": "Bench",
             "injury": "O",
             "injury_raw": "O",
-            "projection": 0.0,
+            "projection": 19.3,
             "score": null
           },
           {
@@ -1315,7 +1325,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 12.3,
+            "projection": 11.72,
             "score": null
           },
           {
@@ -1323,9 +1333,9 @@
             "pos": "RB",
             "team": "PIT",
             "slot": "Bench",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 7.9,
+            "injury": "O",
+            "injury_raw": "O",
+            "projection": 6.38,
             "score": null
           },
           {
@@ -1333,9 +1343,9 @@
             "pos": "WR",
             "team": "CLE",
             "slot": "Bench",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 10.5,
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 0.11,
             "score": null
           },
           {
@@ -1345,17 +1355,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 5.2,
-            "score": null
-          },
-          {
-            "name": "Tony Pollard",
-            "pos": "RB",
-            "team": "TEN",
-            "slot": "Bench",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 13.0,
+            "projection": 5.65,
             "score": null
           },
           {
@@ -1365,7 +1365,7 @@
             "slot": "Bench",
             "injury": null,
             "injury_raw": null,
-            "projection": 13.6,
+            "projection": 14.86,
             "score": null
           }
         ],
@@ -1383,13 +1383,13 @@
         ]
       },
       "matchup": {
-        "week": 5,
-        "opponent": "Midnight Tokers",
-        "opponent_record": "3-1, 1st",
+        "week": 6,
+        "opponent": "Gut Punch",
+        "opponent_record": "2-3, 8th",
         "my_points": 0.0,
-        "opponent_points": 12.64,
-        "my_projection": 128.2,
-        "opponent_projection": 121.5
+        "opponent_points": 0.0,
+        "my_projection": 119.8,
+        "opponent_projection": 100.5
       }
     },
     {
@@ -1397,13 +1397,13 @@
       "name": "Derelict Fantasy Football Club",
       "league_id": "135402",
       "team_name": "Team Miller",
-      "record": "2-2",
-      "standing": "4th of 10",
+      "record": "2-3",
+      "standing": "7th of 10",
       "status": "live",
       "season": "2026",
-      "week": 5,
+      "week": 6,
       "source": "Yahoo (browser session import)",
-      "last_updated": "2026-10-09 20:08:39Z",
+      "last_updated": "2026-10-13 12:22:03Z",
       "url": "https://football.fantasysports.yahoo.com/f1/135402",
       "standings_columns": [
         [
@@ -1434,92 +1434,92 @@
       "standings": [
         {
           "rank": 1,
-          "team": "Youngblood",
-          "record": "3-1",
-          "pf": 1010.65,
-          "pa": 921.22,
-          "streak": "W-3",
+          "team": "Bengals for life!",
+          "record": "4-1",
+          "pf": 1242.33,
+          "pa": 1182.28,
+          "streak": "W-4",
           "is_me": false
         },
         {
           "rank": 2,
-          "team": "Bengals for life!",
-          "record": "3-1",
-          "pf": 996.3,
-          "pa": 1009.4,
-          "streak": "W-3",
+          "team": "Jason Hall's Boss Team",
+          "record": "4-1",
+          "pf": 1180.18,
+          "pa": 1085.91,
+          "streak": "W-1",
           "is_me": false
         },
         {
           "rank": 3,
-          "team": "Jason Hall's Boss Team",
-          "record": "3-1",
-          "pf": 889.12,
-          "pa": 857.28,
-          "streak": "L-1",
+          "team": "Dawg Pounders",
+          "record": "3-2",
+          "pf": 1255.16,
+          "pa": 1048.89,
+          "streak": "W-2",
           "is_me": false
         },
         {
           "rank": 4,
-          "team": "Team Miller",
-          "record": "2-2",
-          "pf": 989.94,
-          "pa": 1020.72,
+          "team": "Youngblood",
+          "record": "3-2",
+          "pf": 1183.53,
+          "pa": 1167.25,
           "streak": "L-1",
-          "is_me": true
+          "is_me": false
         },
         {
           "rank": 5,
-          "team": "Dawg Pounders",
-          "record": "2-2",
-          "pf": 975.07,
-          "pa": 830.08,
-          "streak": "W-1",
+          "team": "barefoot bandit",
+          "record": "3-2",
+          "pf": 1084.57,
+          "pa": 1050.21,
+          "streak": "W-2",
           "is_me": false
         },
         {
           "rank": 6,
-          "team": "Kramer's team",
-          "record": "2-2",
-          "pf": 892.28,
-          "pa": 888.79,
-          "streak": "L-2",
-          "is_me": false
-        },
-        {
-          "rank": 7,
-          "team": "barefoot bandit",
-          "record": "2-2",
-          "pf": 856.39,
-          "pa": 834.12,
+          "team": "TOO MUCH MAGIC",
+          "record": "2-3",
+          "pf": 1294.39,
+          "pa": 1209.42,
           "streak": "W-1",
           "is_me": false
         },
         {
+          "rank": 7,
+          "team": "Team Miller",
+          "record": "2-3",
+          "pf": 1208.75,
+          "pa": 1300.81,
+          "streak": "L-2",
+          "is_me": true
+        },
+        {
           "rank": 8,
-          "team": "TOO MUCH MAGIC",
-          "record": "1-3",
-          "pf": 959.9,
-          "pa": 960.52,
+          "team": "Kramer's team",
+          "record": "2-3",
+          "pf": 1120.91,
+          "pa": 1179.85,
           "streak": "L-3",
           "is_me": false
         },
         {
           "rank": 9,
           "team": "AJ WHOMcCARRONS",
-          "record": "1-3",
-          "pf": 920.11,
-          "pa": 1006.51,
-          "streak": "W-1",
+          "record": "1-4",
+          "pf": 1136.2,
+          "pa": 1234.69,
+          "streak": "L-1",
           "is_me": false
         },
         {
           "rank": 10,
           "team": "Third & Bong",
-          "record": "1-3",
-          "pf": 796.19,
-          "pa": 957.31,
-          "streak": "L-1",
+          "record": "1-4",
+          "pf": 1045.09,
+          "pa": 1291.8,
+          "streak": "L-2",
           "is_me": false
         }
       ],
@@ -1532,7 +1532,7 @@
             "slot": "QB",
             "injury": null,
             "injury_raw": null,
-            "projection": 38.06,
+            "projection": 41.6,
             "score": null
           },
           {
@@ -1542,7 +1542,7 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 18.06,
+            "projection": 17.46,
             "score": null
           },
           {
@@ -1552,7 +1552,7 @@
             "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 19.53,
+            "projection": 18.98,
             "score": null
           },
           {
@@ -1562,17 +1562,17 @@
             "slot": "WR",
             "injury": null,
             "injury_raw": null,
-            "projection": 17.55,
+            "projection": 14.97,
             "score": null
           },
           {
-            "name": "Deebo Samuel Sr.",
+            "name": "Emeka Egbuka",
             "pos": "WR",
-            "team": "SF",
+            "team": "TB",
             "slot": "WR",
             "injury": null,
             "injury_raw": null,
-            "projection": 15.45,
+            "projection": 12.08,
             "score": null
           },
           {
@@ -1582,17 +1582,7 @@
             "slot": "TE",
             "injury": null,
             "injury_raw": null,
-            "projection": 21.94,
-            "score": null
-          },
-          {
-            "name": "TreVeyon Henderson",
-            "pos": "RB",
-            "team": "NE",
-            "slot": "W/R/T",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 19.01,
+            "projection": 19.56,
             "score": null
           },
           {
@@ -1602,7 +1592,17 @@
             "slot": "W/R/T",
             "injury": null,
             "injury_raw": null,
-            "projection": 22.7,
+            "projection": 16.91,
+            "score": null
+          },
+          {
+            "name": "KC Concepcion Jr.",
+            "pos": "WR",
+            "team": "CLE",
+            "slot": "W/R/T",
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 16.02,
             "score": null
           },
           {
@@ -1612,7 +1612,7 @@
             "slot": "Q/W/R/T",
             "injury": null,
             "injury_raw": null,
-            "projection": 30.92,
+            "projection": 36.25,
             "score": null
           },
           {
@@ -1632,20 +1632,30 @@
             "slot": "DEF",
             "injury": null,
             "injury_raw": null,
-            "projection": 14.58,
+            "projection": 18.31,
             "score": null
           }
         ],
         "bench": [
           {
-            "name": "Emeka Egbuka",
-            "pos": "WR",
-            "team": "TB",
+            "name": "TreVeyon Henderson",
+            "pos": "RB",
+            "team": "NE",
             "slot": "BN",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 12.26,
-            "score": 19.2
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 16.2,
+            "score": null
+          },
+          {
+            "name": "Deebo Samuel Sr.",
+            "pos": "WR",
+            "team": "SF",
+            "slot": "BN",
+            "injury": "O",
+            "injury_raw": "O",
+            "projection": 0.0,
+            "score": null
           },
           {
             "name": "Jadarian Price",
@@ -1660,21 +1670,11 @@
           {
             "name": "Marvin Harrison Jr.",
             "pos": "WR",
-            "team": "ARI",
+            "team": "HOU",
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 9.56,
-            "score": null
-          },
-          {
-            "name": "KC Concepcion Jr.",
-            "pos": "WR",
-            "team": "CLE",
-            "slot": "BN",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 15.91,
+            "projection": 1.59,
             "score": null
           },
           {
@@ -1684,7 +1684,7 @@
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 6.73,
+            "projection": 8.33,
             "score": null
           }
         ],
@@ -1702,20 +1702,20 @@
         ]
       },
       "matchup": {
-        "week": 5,
-        "dates": "Week 5: Oct 6 - Oct 12",
-        "opponent": "Dawg Pounders",
-        "opponent_manager": "M0_Bigsley",
-        "opponent_record": "2-2, 5th",
+        "week": 6,
+        "dates": "Week 6: Oct 13 - Oct 19",
+        "opponent": "Third & Bong",
+        "opponent_manager": "Chase",
+        "opponent_record": "1-4, 10th",
         "my_points": 0.0,
         "opponent_points": 0.0,
-        "my_projection": 226.53,
-        "opponent_projection": 256.78,
-        "my_win_prob": "Underdog 36%",
-        "opponent_win_prob": "64% Favorite",
+        "my_projection": 220.87,
+        "opponent_projection": 216.81,
+        "my_win_prob": "Favorite 52%",
+        "opponent_win_prob": "48% Underdog",
         "players_remaining": 11,
         "opponent_players_remaining": 11,
-        "note": "Week 5 stats may change if stat corrections are applied by Thursday, Oct 15."
+        "note": "Week 6 stats may change if stat corrections are applied by Thursday, Oct 22."
       }
     },
     {
@@ -1724,12 +1724,12 @@
       "league_id": "1599505",
       "team_name": "MillerTime",
       "record": "Alive (SAFE)",
-      "standing": "7 of 10 alive",
+      "standing": "1 of 9 alive",
       "status": "live",
       "season": "2026",
-      "week": 5,
+      "week": 6,
       "source": "Yahoo (browser session import)",
-      "last_updated": "2026-10-09 20:08:39Z",
+      "last_updated": "2026-10-13 12:22:03Z",
       "url": "https://football.fantasysports.yahoo.com/f1/1599505",
       "format": "Guillotine / elimination: lowest-scoring team is removed each week",
       "standings_columns": [
@@ -1757,92 +1757,83 @@
       "standings": [
         {
           "rank": 1,
-          "team": "Blindside Raaaaalph",
-          "season_pts": 380.9,
-          "week_pts": 23.5,
-          "proj": 108.16,
-          "ppw": 89.35,
-          "is_me": false
+          "team": "MillerTime",
+          "season_pts": 468.14,
+          "week_pts": 0.0,
+          "proj": 92.2,
+          "ppw": 93.63,
+          "is_me": true
         },
         {
           "rank": 2,
-          "team": "Joe B\u2019s",
-          "season_pts": 396.84,
+          "team": "Blindside Raaaaalph",
+          "season_pts": 485.38,
           "week_pts": 0.0,
-          "proj": 105.23,
-          "ppw": 99.21,
+          "proj": 91.93,
+          "ppw": 97.08,
           "is_me": false
         },
         {
           "rank": 3,
-          "team": "Friday Night Bobby",
-          "season_pts": 371.56,
+          "team": "Alex Express",
+          "season_pts": 463.5,
           "week_pts": 0.0,
-          "proj": 101.21,
-          "ppw": 92.89,
+          "proj": 87.06,
+          "ppw": 92.7,
           "is_me": false
         },
         {
           "rank": 4,
-          "team": "Matt Mode",
-          "season_pts": 338.62,
+          "team": "Press Coverage Aiden",
+          "season_pts": 373.14,
           "week_pts": 0.0,
-          "proj": 99.14,
-          "ppw": 84.66,
+          "proj": 82.25,
+          "ppw": 74.63,
           "is_me": false
         },
         {
           "rank": 5,
-          "team": "Young Gunslinger",
-          "season_pts": 371.76,
+          "team": "Friday Night Bobby",
+          "season_pts": 523.1,
           "week_pts": 0.0,
-          "proj": 99.02,
-          "ppw": 92.94,
+          "proj": 81.37,
+          "ppw": 104.62,
           "is_me": false
         },
         {
           "rank": 6,
-          "team": "Alex Express",
-          "season_pts": 361.82,
+          "team": "Young Gunslinger",
+          "season_pts": 500.96,
           "week_pts": 0.0,
-          "proj": 95.42,
-          "ppw": 90.46,
+          "proj": 79.2,
+          "ppw": 100.19,
           "is_me": false
         },
         {
           "rank": 7,
-          "team": "MillerTime",
-          "season_pts": 416.22,
-          "week_pts": 13.2,
-          "proj": 94.79,
-          "ppw": 100.76,
-          "is_me": true
+          "team": "Jarvis's Grit",
+          "season_pts": 475.5,
+          "week_pts": 0.0,
+          "proj": 71.32,
+          "ppw": 95.1,
+          "is_me": false
         },
         {
           "rank": 8,
-          "team": "Press Coverage Aiden",
-          "season_pts": 307.02,
+          "team": "Matt Mode",
+          "season_pts": 420.06,
           "week_pts": 0.0,
-          "proj": 83.73,
-          "ppw": 76.76,
+          "proj": 65.08,
+          "ppw": 84.01,
           "is_me": false
         },
         {
           "rank": 9,
-          "team": "Jarvis's Grit",
-          "season_pts": 399.24,
-          "week_pts": 10.5,
-          "proj": 82.67,
-          "ppw": 97.19,
-          "is_me": false
-        },
-        {
-          "rank": 10,
-          "team": "4th Down jacob",
-          "season_pts": 353.38,
-          "week_pts": 1.9,
-          "proj": 24.55,
-          "ppw": 87.87,
+          "team": "Joe B\u2019s",
+          "season_pts": 505.04,
+          "week_pts": 0.0,
+          "proj": 44.75,
+          "ppw": 101.01,
           "is_me": false
         }
       ],
@@ -1855,27 +1846,27 @@
             "slot": "QB",
             "injury": null,
             "injury_raw": null,
-            "projection": 17.54,
+            "projection": 19.0,
             "score": null
-          },
-          {
-            "name": "Javonte Williams",
-            "pos": "RB",
-            "team": "DAL",
-            "slot": "RB",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 15.42,
-            "score": 13.2
           },
           {
             "name": "Quinshon Judkins",
             "pos": "RB",
             "team": "CLE",
             "slot": "RB",
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 10.16,
+            "score": null
+          },
+          {
+            "name": "MarShawn Lloyd",
+            "pos": "RB",
+            "team": "GB",
+            "slot": "RB",
             "injury": null,
             "injury_raw": null,
-            "projection": 11.73,
+            "projection": 10.09,
             "score": null
           },
           {
@@ -1883,19 +1874,19 @@
             "pos": "WR",
             "team": "SEA",
             "slot": "WR",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 19.05,
+            "injury": "Q",
+            "injury_raw": "Q",
+            "projection": 17.95,
             "score": null
           },
           {
-            "name": "DJ Moore",
+            "name": "Michael Wilson",
             "pos": "WR",
-            "team": "BUF",
+            "team": "ARI",
             "slot": "WR",
-            "injury": "Q",
-            "injury_raw": "Q",
-            "projection": 8.5,
+            "injury": null,
+            "injury_raw": null,
+            "projection": 12.6,
             "score": null
           },
           {
@@ -1905,39 +1896,39 @@
             "slot": "TE",
             "injury": null,
             "injury_raw": null,
-            "projection": 16.13,
+            "projection": 14.16,
             "score": null
           },
           {
-            "name": "MarShawn Lloyd",
-            "pos": "RB",
-            "team": "GB",
+            "name": "Harold Fannin Jr.",
+            "pos": "TE",
+            "team": "CLE",
             "slot": "W/R/T",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.64,
+            "projection": 8.24,
             "score": null
           }
         ],
         "bench": [
           {
-            "name": "Harold Fannin Jr.",
-            "pos": "TE",
-            "team": "CLE",
+            "name": "Javonte Williams",
+            "pos": "RB",
+            "team": "DAL",
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 8.82,
+            "projection": 14.42,
             "score": null
           },
           {
-            "name": "Michael Wilson",
+            "name": "DJ Moore",
             "pos": "WR",
-            "team": "ARI",
+            "team": "BUF",
             "slot": "BN",
-            "injury": null,
-            "injury_raw": null,
-            "projection": 14.34,
+            "injury": "O",
+            "injury_raw": "O",
+            "projection": 0.0,
             "score": null
           },
           {
@@ -1947,7 +1938,7 @@
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 17.64,
+            "projection": 17.01,
             "score": null
           },
           {
@@ -1967,7 +1958,7 @@
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": null,
+            "projection": 8.76,
             "score": null
           },
           {
@@ -1977,7 +1968,7 @@
             "slot": "BN",
             "injury": null,
             "injury_raw": null,
-            "projection": 3.31,
+            "projection": 4.25,
             "score": null
           },
           {
@@ -1985,8 +1976,8 @@
             "pos": "WR",
             "team": "DEN",
             "slot": "BN",
-            "injury": "O",
-            "injury_raw": "O",
+            "injury": "IR",
+            "injury_raw": "IR",
             "projection": 0.0,
             "score": null
           }
@@ -1996,8 +1987,8 @@
       "survivor": {
         "alive": true,
         "status_label": "SAFE",
-        "teams_remaining": 10,
-        "teams_eliminated": 4,
+        "teams_remaining": 9,
+        "teams_eliminated": 5,
         "teams_total": 14,
         "eliminated": [
           {
@@ -2019,22 +2010,27 @@
             "week": 4,
             "team": "Philly Cheesesteaks",
             "season_pts": 330.02
+          },
+          {
+            "week": 5,
+            "team": "4th Down jacob",
+            "season_pts": 377.58
           }
         ],
-        "source_updated": "Fri Oct 09 01:46am CDT"
+        "source_updated": "Tue Oct 13 01:42am CDT"
       },
       "matchup": {
-        "week": 5,
-        "dates": "Week 5: Oct 6 - Oct 12",
-        "status": "In progress",
-        "opponent": "4th Down jacob",
-        "opponent_manager": "jacob",
+        "week": 6,
+        "dates": "Week 6: Oct 13 - Oct 19",
+        "status": "Not started yet",
+        "opponent": "Joe B\u2019s",
+        "opponent_manager": "David",
         "opponent_record": null,
-        "my_points": 13.2,
-        "opponent_points": 1.9,
-        "my_projection": 97.01,
-        "opponent_projection": 39.04,
-        "note": "Week 5 stats may change if stat corrections are applied by Thursday, Oct 15."
+        "my_points": 0.0,
+        "opponent_points": 0.0,
+        "my_projection": 92.2,
+        "opponent_projection": 44.75,
+        "note": "Week 6 stats may change if stat corrections are applied by Thursday, Oct 22."
       }
     }
   ]

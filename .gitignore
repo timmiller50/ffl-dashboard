@@ -1,2 +1,3 @@
 data/players_nfl_cache.json
 __pycache__/
+data/tmp/
