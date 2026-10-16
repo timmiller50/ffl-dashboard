@@ -98,14 +98,14 @@
         "nfl_team": "SF",
         "lineup_slot": "RB",
         "injury_status": null,
-        "projection": 22.19,
+        "projection": 21.65,
         "score": null
       },
       {
         "player_name": "Justin Jefferson",
         "position": "WR",
         "nfl_team": "MIN",
-        "lineup_slot": "WR",
+        "lineup_slot": "Bench",
         "injury_status": null,
         "projection": 0.0,
         "score": null
@@ -116,7 +116,7 @@
         "nfl_team": "KC",
         "lineup_slot": "RB",
         "injury_status": null,
-        "projection": 22.73,
+        "projection": 23.3,
         "score": null
       },
       {
@@ -125,7 +125,7 @@
         "nfl_team": "NYJ",
         "lineup_slot": "WR",
         "injury_status": null,
-        "projection": 14.64,
+        "projection": 14.8,
         "score": null
       },
       {
@@ -134,7 +134,7 @@
         "nfl_team": "ATL",
         "lineup_slot": "TE",
         "injury_status": null,
-        "projection": 8.39,
+        "projection": 8.69,
         "score": null
       },
       {
@@ -143,7 +143,7 @@
         "nfl_team": "NYG",
         "lineup_slot": "FLEX",
         "injury_status": null,
-        "projection": 13.23,
+        "projection": 13.01,
         "score": null
       },
       {
@@ -161,7 +161,7 @@
         "nfl_team": "LAR",
         "lineup_slot": "QB",
         "injury_status": null,
-        "projection": 18.64,
+        "projection": 19.65,
         "score": null
       },
       {
@@ -169,15 +169,15 @@
         "position": "RB",
         "nfl_team": "PIT",
         "lineup_slot": "Bench",
-        "injury_status": "O",
-        "projection": 6.38,
+        "injury_status": null,
+        "projection": 6.37,
         "score": null
       },
       {
         "player_name": "Alec Pierce",
         "position": "WR",
         "nfl_team": "IND",
-        "lineup_slot": "Bench",
+        "lineup_slot": "IR",
         "injury_status": "IR",
         "projection": 0.0,
         "score": null
@@ -188,16 +188,7 @@
         "nfl_team": "LAR",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 9.38,
-        "score": null
-      },
-      {
-        "player_name": "De'Zhaun Stribling",
-        "position": "WR",
-        "nfl_team": "SF",
-        "lineup_slot": "IR",
-        "injury_status": "IR",
-        "projection": 0.0,
+        "projection": 8.97,
         "score": null
       },
       {
@@ -215,16 +206,7 @@
         "nfl_team": "JAX",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 9.75,
-        "score": null
-      },
-      {
-        "player_name": "Lions D/ST",
-        "position": "D/ST",
-        "nfl_team": "DET",
-        "lineup_slot": "D/ST",
-        "injury_status": null,
-        "projection": 0.0,
+        "projection": 9.43,
         "score": null
       },
       {
@@ -233,7 +215,7 @@
         "nfl_team": "PIT",
         "lineup_slot": "K",
         "injury_status": null,
-        "projection": 8.77,
+        "projection": 8.76,
         "score": null
       },
       {
@@ -242,7 +224,25 @@
         "nfl_team": "GB",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 10.85,
+        "projection": 10.96,
+        "score": null
+      },
+      {
+        "player_name": "Germie Bernard",
+        "position": "WR",
+        "nfl_team": "PIT",
+        "lineup_slot": "WR",
+        "injury_status": null,
+        "projection": 9.89,
+        "score": null
+      },
+      {
+        "player_name": "49ers D/ST",
+        "position": "D/ST",
+        "nfl_team": "SF",
+        "lineup_slot": "D/ST",
+        "injury_status": null,
+        "projection": 4.8,
         "score": null
       }
     ],
@@ -251,8 +251,8 @@
       "opponent_team_name": "cason's Competitive Team",
       "my_score": 0.0,
       "opponent_score": 0.0,
-      "my_projection_total": 108.6,
-      "opponent_projection_total": 101.7,
+      "my_projection_total": 124.5,
+      "opponent_projection_total": 128.6,
       "opponent_record": "2-3-0, 5th",
       "my_record": "2-3-0, 6th"
     }
@@ -371,8 +371,8 @@
         "position": "WR",
         "nfl_team": "DAL",
         "lineup_slot": "WR/TE",
-        "injury_status": "Q",
-        "projection": 20.14,
+        "injury_status": null,
+        "projection": 20.23,
         "score": null
       },
       {
@@ -381,7 +381,7 @@
         "nfl_team": "BAL",
         "lineup_slot": "RB",
         "injury_status": null,
-        "projection": 23.3,
+        "projection": 23.31,
         "score": null
       },
       {
@@ -399,7 +399,7 @@
         "nfl_team": "TB",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 11.41,
+        "projection": 11.52,
         "score": null
       },
       {
@@ -408,7 +408,7 @@
         "nfl_team": "IND",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 12.87,
+        "projection": 12.56,
         "score": null
       },
       {
@@ -426,7 +426,7 @@
         "nfl_team": "SF",
         "lineup_slot": "QB",
         "injury_status": null,
-        "projection": 28.27,
+        "projection": 28.26,
         "score": null
       },
       {
@@ -444,7 +444,7 @@
         "nfl_team": "PIT",
         "lineup_slot": "D/ST",
         "injury_status": null,
-        "projection": 10.81,
+        "projection": 10.76,
         "score": null
       },
       {
@@ -453,7 +453,7 @@
         "nfl_team": "GB",
         "lineup_slot": "WR/TE",
         "injury_status": null,
-        "projection": 17.45,
+        "projection": 16.9,
         "score": null
       },
       {
@@ -462,7 +462,7 @@
         "nfl_team": "PIT",
         "lineup_slot": "K",
         "injury_status": null,
-        "projection": 9.05,
+        "projection": 9.04,
         "score": null
       },
       {
@@ -471,7 +471,7 @@
         "nfl_team": "IND",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 17.31,
+        "projection": 17.24,
         "score": null
       },
       {
@@ -480,7 +480,7 @@
         "nfl_team": "CHI",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 6.91,
+        "projection": 6.71,
         "score": null
       },
       {
@@ -489,7 +489,7 @@
         "nfl_team": "BUF",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 8.51,
+        "projection": 9.34,
         "score": null
       },
       {
@@ -498,16 +498,7 @@
         "nfl_team": "ARI",
         "lineup_slot": "WR/TE",
         "injury_status": null,
-        "projection": 16.94,
-        "score": null
-      },
-      {
-        "player_name": "Tyler Allgeier",
-        "position": "RB",
-        "nfl_team": "ARI",
-        "lineup_slot": "RB",
-        "injury_status": null,
-        "projection": 6.41,
+        "projection": 18.01,
         "score": null
       },
       {
@@ -520,12 +511,21 @@
         "score": null
       },
       {
-        "player_name": "Jaylen Wright",
-        "position": "RB",
-        "nfl_team": "MIA",
+        "player_name": "Germie Bernard",
+        "position": "WR",
+        "nfl_team": "PIT",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 0.0,
+        "projection": 10.28,
+        "score": null
+      },
+      {
+        "player_name": "Dameon Pierce",
+        "position": "RB",
+        "nfl_team": "PHI",
+        "lineup_slot": "RB",
+        "injury_status": null,
+        "projection": 13.32,
         "score": null
       }
     ],
@@ -534,8 +534,8 @@
       "opponent_team_name": "Bolieve in Nix",
       "my_score": 0.0,
       "opponent_score": 0.0,
-      "my_projection_total": 132.4,
-      "opponent_projection_total": 68.5,
+      "my_projection_total": 139.8,
+      "opponent_projection_total": 119.3,
       "opponent_record": "3-2-0, 4th",
       "my_record": "5-0-0, 1st"
     }
@@ -639,7 +639,7 @@
         "nfl_team": "SF",
         "lineup_slot": "RB",
         "injury_status": null,
-        "projection": 22.19,
+        "projection": 21.65,
         "score": null
       },
       {
@@ -656,7 +656,7 @@
         "position": "QB",
         "nfl_team": "BAL",
         "lineup_slot": "Bench",
-        "injury_status": "O",
+        "injury_status": "Q",
         "projection": 19.3,
         "score": null
       },
@@ -666,7 +666,7 @@
         "nfl_team": "NYG",
         "lineup_slot": "WR",
         "injury_status": null,
-        "projection": 17.41,
+        "projection": 17.35,
         "score": null
       },
       {
@@ -675,7 +675,7 @@
         "nfl_team": "LAR",
         "lineup_slot": "WR",
         "injury_status": null,
-        "projection": 15.52,
+        "projection": 16.05,
         "score": null
       },
       {
@@ -685,7 +685,7 @@
         "lineup_slot": "IR",
         "injury_status": "IR",
         "projection": 0.0,
-        "score": null
+        "score": 0.0
       },
       {
         "player_name": "Luther Burden III",
@@ -693,14 +693,14 @@
         "nfl_team": "CHI",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 11.72,
+        "projection": 12.47,
         "score": null
       },
       {
         "player_name": "Sam LaPorta",
         "position": "TE",
         "nfl_team": "DET",
-        "lineup_slot": "TE",
+        "lineup_slot": "Bench",
         "injury_status": null,
         "projection": 0.0,
         "score": null
@@ -711,7 +711,7 @@
         "nfl_team": "ARI",
         "lineup_slot": "FLEX",
         "injury_status": null,
-        "projection": 13.33,
+        "projection": 14.06,
         "score": null
       },
       {
@@ -719,8 +719,8 @@
         "position": "RB",
         "nfl_team": "PIT",
         "lineup_slot": "Bench",
-        "injury_status": "O",
-        "projection": 6.38,
+        "injury_status": null,
+        "projection": 6.37,
         "score": null
       },
       {
@@ -738,7 +738,7 @@
         "nfl_team": "PIT",
         "lineup_slot": "D/ST",
         "injury_status": null,
-        "projection": 7.03,
+        "projection": 6.95,
         "score": null
       },
       {
@@ -747,7 +747,7 @@
         "nfl_team": "CLE",
         "lineup_slot": "Bench",
         "injury_status": "Q",
-        "projection": 0.11,
+        "projection": 8.33,
         "score": null
       },
       {
@@ -756,16 +756,7 @@
         "nfl_team": "PIT",
         "lineup_slot": "K",
         "injury_status": null,
-        "projection": 8.77,
-        "score": null
-      },
-      {
-        "player_name": "Kaelon Black",
-        "position": "RB",
-        "nfl_team": "SF",
-        "lineup_slot": "Bench",
-        "injury_status": null,
-        "projection": 5.65,
+        "projection": 8.76,
         "score": null
       },
       {
@@ -774,7 +765,7 @@
         "nfl_team": "TEN",
         "lineup_slot": "RB",
         "injury_status": null,
-        "projection": 14.14,
+        "projection": 14.22,
         "score": null
       },
       {
@@ -783,7 +774,16 @@
         "nfl_team": "SEA",
         "lineup_slot": "Bench",
         "injury_status": null,
-        "projection": 14.86,
+        "projection": 14.84,
+        "score": 5.2
+      },
+      {
+        "player_name": "Dallas Goedert",
+        "position": "TE",
+        "nfl_team": "PHI",
+        "lineup_slot": "TE",
+        "injury_status": null,
+        "projection": 10.8,
         "score": null
       }
     ],
@@ -792,8 +792,8 @@
       "opponent_team_name": "Gut Punch",
       "my_score": 0.0,
       "opponent_score": 0.0,
-      "my_projection_total": 119.8,
-      "opponent_projection_total": 100.5,
+      "my_projection_total": 131.2,
+      "opponent_projection_total": 91.4,
       "opponent_record": "2-3-0, 8th",
       "my_record": "2-3-0, 5th"
     }

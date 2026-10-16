@@ -40,8 +40,8 @@
         "points_against": "1048.89",
         "streak": "W-2",
         "waiver_budget": "$74",
-        "waiver": "8",
-        "moves": "5"
+        "waiver": "10",
+        "moves": "8"
       },
       {
         "rank": "4",
@@ -52,7 +52,7 @@
         "streak": "L-1",
         "waiver_budget": "$100",
         "waiver": "7",
-        "moves": "7"
+        "moves": "8"
       },
       {
         "rank": "5",
@@ -63,7 +63,7 @@
         "streak": "W-2",
         "waiver_budget": "$89",
         "waiver": "2",
-        "moves": "3"
+        "moves": "4"
       },
       {
         "rank": "6",
@@ -72,9 +72,9 @@
         "points_for": "1294.39",
         "points_against": "1209.42",
         "streak": "W-1",
-        "waiver_budget": "$65",
-        "waiver": "10",
-        "moves": "9"
+        "waiver_budget": "$26",
+        "waiver": "9",
+        "moves": "11"
       },
       {
         "rank": "7",
@@ -85,7 +85,7 @@
         "streak": "L-2",
         "waiver_budget": "$99",
         "waiver": "3",
-        "moves": "4"
+        "moves": "5"
       },
       {
         "rank": "8",
@@ -95,8 +95,8 @@
         "points_against": "1179.85",
         "streak": "L-3",
         "waiver_budget": "$100",
-        "waiver": "9",
-        "moves": "7"
+        "waiver": "8",
+        "moves": "8"
       },
       {
         "rank": "9",
@@ -107,7 +107,7 @@
         "streak": "L-1",
         "waiver_budget": "$100",
         "waiver": "1",
-        "moves": "2"
+        "moves": "3"
       },
       {
         "rank": "10",
@@ -129,16 +129,7 @@
         "nfl_team": "Buf",
         "lineup_slot": "QB",
         "injury_status": null,
-        "proj_pts": "41.60",
-        "fan_pts": null
-      },
-      {
-        "player_name": "RJ Harvey",
-        "position": "RB",
-        "nfl_team": "Den",
-        "lineup_slot": "RB",
-        "injury_status": null,
-        "proj_pts": "17.46",
+        "proj_pts": "43.75",
         "fan_pts": null
       },
       {
@@ -147,8 +138,17 @@
         "nfl_team": "Ten",
         "lineup_slot": "RB",
         "injury_status": null,
-        "proj_pts": "18.98",
+        "proj_pts": "19.98",
         "fan_pts": null
+      },
+      {
+        "player_name": "Emanuel Wilson",
+        "position": "RB",
+        "nfl_team": "Sea",
+        "lineup_slot": "RB",
+        "injury_status": null,
+        "proj_pts": "24.40",
+        "fan_pts": "14.70"
       },
       {
         "player_name": "Garrett Wilson",
@@ -156,7 +156,7 @@
         "nfl_team": "NYJ",
         "lineup_slot": "WR",
         "injury_status": null,
-        "proj_pts": "14.97",
+        "proj_pts": "18.10",
         "fan_pts": null
       },
       {
@@ -165,7 +165,7 @@
         "nfl_team": "TB",
         "lineup_slot": "WR",
         "injury_status": null,
-        "proj_pts": "12.08",
+        "proj_pts": "12.58",
         "fan_pts": null
       },
       {
@@ -174,25 +174,25 @@
         "nfl_team": "Ari",
         "lineup_slot": "TE",
         "injury_status": null,
-        "proj_pts": "19.56",
+        "proj_pts": "18.33",
         "fan_pts": null
       },
       {
-        "player_name": "Emanuel Wilson",
+        "player_name": "RJ Harvey",
         "position": "RB",
-        "nfl_team": "Sea",
+        "nfl_team": "Den",
         "lineup_slot": "W/R/T",
         "injury_status": null,
-        "proj_pts": "16.91",
-        "fan_pts": null
+        "proj_pts": "15.36",
+        "fan_pts": "20.10"
       },
       {
-        "player_name": "KC Concepcion Jr.",
-        "position": "WR",
-        "nfl_team": "Cle",
+        "player_name": "Dameon Pierce",
+        "position": "RB",
+        "nfl_team": "Phi",
         "lineup_slot": "W/R/T",
-        "injury_status": "Q",
-        "proj_pts": "16.02",
+        "injury_status": null,
+        "proj_pts": "19.18",
         "fan_pts": null
       },
       {
@@ -201,25 +201,16 @@
         "nfl_team": "SF",
         "lineup_slot": "Q/W/R/T",
         "injury_status": null,
-        "proj_pts": "36.25",
+        "proj_pts": "36.43",
         "fan_pts": null
       },
       {
-        "player_name": "Chris Boswell",
-        "position": "K",
-        "nfl_team": "Pit",
-        "lineup_slot": "K",
-        "injury_status": null,
-        "proj_pts": "8.73",
-        "fan_pts": null
-      },
-      {
-        "player_name": "Steelers",
-        "position": "DEF",
-        "nfl_team": "Pit",
-        "lineup_slot": "DEF",
-        "injury_status": null,
-        "proj_pts": "18.31",
+        "player_name": "KC Concepcion Jr.",
+        "position": "WR",
+        "nfl_team": "Cle",
+        "lineup_slot": "BN",
+        "injury_status": "Q",
+        "proj_pts": "9.69",
         "fan_pts": null
       },
       {
@@ -228,7 +219,7 @@
         "nfl_team": "NE",
         "lineup_slot": "BN",
         "injury_status": "Q",
-        "proj_pts": "16.20",
+        "proj_pts": "8.54",
         "fan_pts": null
       },
       {
@@ -247,7 +238,7 @@
         "lineup_slot": "BN",
         "injury_status": "IR",
         "proj_pts": "0.00",
-        "fan_pts": null
+        "fan_pts": "0.00"
       },
       {
         "player_name": "Marvin Harrison Jr.",
@@ -255,16 +246,7 @@
         "nfl_team": "Hou",
         "lineup_slot": "BN",
         "injury_status": null,
-        "proj_pts": "1.59",
-        "fan_pts": null
-      },
-      {
-        "player_name": "Kaelon Black",
-        "position": "RB",
-        "nfl_team": "SF",
-        "lineup_slot": "BN",
-        "injury_status": null,
-        "proj_pts": "8.33",
+        "proj_pts": "4.11",
         "fan_pts": null
       },
       {
@@ -275,29 +257,48 @@
         "injury_status": "IR",
         "proj_pts": "0.00",
         "fan_pts": null
+      },
+      {
+        "player_name": "Chris Boswell",
+        "position": "K",
+        "nfl_team": "Pit",
+        "lineup_slot": "K",
+        "injury_status": null,
+        "proj_pts": "8.61",
+        "fan_pts": null
+      },
+      {
+        "player_name": "Steelers",
+        "position": "DEF",
+        "nfl_team": "Pit",
+        "lineup_slot": "DEF",
+        "injury_status": null,
+        "proj_pts": "18.03",
+        "fan_pts": null
       }
     ],
     "current_matchup": {
       "week": 6,
       "week_dates": "Week 6: Oct 13 - Oct 19",
-      "status": "Not started yet",
+      "status": "In progress",
       "opponent_team_name": "Third & Bong",
       "opponent_manager_name": "Chase",
       "opponent_record": "1-4-0",
       "opponent_rank": "10th",
-      "my_score": "0.00",
-      "opponent_score": "0.00",
-      "my_orig_proj": "220.87",
-      "opponent_orig_proj": "216.81",
-      "my_live_proj": "220.87",
-      "opponent_live_proj": "216.81",
-      "my_players_remaining": 11,
-      "opponent_players_remaining": 11,
-      "my_win_probability_label": "Favorite 52%",
-      "opponent_win_probability_label": "48% Underdog",
+      "my_score": "34.80",
+      "opponent_score": "23.37",
+      "my_orig_proj": "234.75",
+      "opponent_orig_proj": "211.52",
+      "my_live_proj": "229.79",
+      "opponent_live_proj": "208.61",
+      "my_players_remaining": 9,
+      "opponent_players_remaining": 10,
+      "my_win_probability_label": "Favorite 62%",
+      "opponent_win_probability_label": "38% Underdog",
       "projected_winner": "Tim",
       "note": "Week 6 stats may change if stat corrections are applied by Thursday, Oct 22."
-    }
+    },
+    "standings_last_update": "Fri Oct 16 12:15am PDT"
   },
   "1599505": {
     "league_id": "1599505",
@@ -308,42 +309,55 @@
     "my_team_name": "MillerTime",
     "my_manager_name": "Tim",
     "my_team_record": null,
-    "my_team_rank": "1",
+    "my_team_rank": "3",
     "standings_source": "league home page standings table; no W-L-T column shown in this league",
     "standings": [
       {
-        "rank": "9",
-        "team_name": "Joe B’s",
         "w_l_t": null,
         "points_for": null,
+        "rank": "9",
+        "team_name": "Joe B’s",
         "points_this_week": "0.00",
-        "projected_points": "44.75",
+        "projected_points": "83.82",
         "season_points": "505.04",
         "fab": "$694",
         "waiver": "8",
-        "moves": "9",
+        "moves": "10",
         "pts_per_week": "101.01"
       },
       {
-        "rank": "8",
-        "team_name": "Matt Mode",
         "w_l_t": null,
         "points_for": null,
+        "rank": "8",
+        "team_name": "Press Coverage Aiden",
         "points_this_week": "0.00",
-        "projected_points": "65.08",
+        "projected_points": "84.00",
+        "season_points": "373.14",
+        "fab": "$970",
+        "waiver": "1",
+        "moves": "7",
+        "pts_per_week": "74.63"
+      },
+      {
+        "w_l_t": null,
+        "points_for": null,
+        "rank": "7",
+        "team_name": "Matt Mode",
+        "points_this_week": "0.00",
+        "projected_points": "84.70",
         "season_points": "420.06",
         "fab": "$560",
         "waiver": "6",
-        "moves": "11",
+        "moves": "14",
         "pts_per_week": "84.01"
       },
       {
-        "rank": "7",
-        "team_name": "Jarvis's Grit",
         "w_l_t": null,
         "points_for": null,
+        "rank": "6",
+        "team_name": "Jarvis's Grit",
         "points_this_week": "0.00",
-        "projected_points": "71.32",
+        "projected_points": "89.29",
         "season_points": "475.50",
         "fab": "$1000",
         "waiver": "2",
@@ -351,82 +365,69 @@
         "pts_per_week": "95.1"
       },
       {
-        "rank": "6",
-        "team_name": "Young Gunslinger",
         "w_l_t": null,
         "points_for": null,
+        "rank": "5",
+        "team_name": "Alex Express",
         "points_this_week": "0.00",
-        "projected_points": "79.20",
+        "projected_points": "97.43",
+        "season_points": "463.50",
+        "fab": "$384",
+        "waiver": "7",
+        "moves": "8",
+        "pts_per_week": "92.7"
+      },
+      {
+        "w_l_t": null,
+        "points_for": null,
+        "rank": "4",
+        "team_name": "Blindside Raaaaalph",
+        "points_this_week": "0.00",
+        "projected_points": "99.88",
+        "season_points": "485.38",
+        "fab": "$149",
+        "waiver": "9",
+        "moves": "8",
+        "pts_per_week": "97.08"
+      },
+      {
+        "w_l_t": null,
+        "points_for": null,
+        "rank": "3",
+        "team_name": "MillerTime",
+        "points_this_week": "19.40",
+        "projected_points": "102.37",
+        "season_points": "487.54",
+        "fab": "$549",
+        "waiver": "3",
+        "moves": "2",
+        "pts_per_week": "93.63"
+      },
+      {
+        "w_l_t": null,
+        "points_for": null,
+        "rank": "2",
+        "team_name": "Friday Night Bobby",
+        "points_this_week": "0.00",
+        "projected_points": "105.12",
+        "season_points": "523.10",
+        "fab": "$61",
+        "waiver": "4",
+        "moves": "10",
+        "pts_per_week": "104.62"
+      },
+      {
+        "w_l_t": null,
+        "points_for": null,
+        "rank": "1",
+        "team_name": "Young Gunslinger",
+        "points_this_week": "0.00",
+        "projected_points": "106.66",
         "season_points": "500.96",
         "fab": "$647",
         "waiver": "5",
         "moves": "5",
         "pts_per_week": "100.19"
-      },
-      {
-        "rank": "5",
-        "team_name": "Friday Night Bobby",
-        "w_l_t": null,
-        "points_for": null,
-        "points_this_week": "0.00",
-        "projected_points": "81.37",
-        "season_points": "523.10",
-        "fab": "$417",
-        "waiver": "4",
-        "moves": "8",
-        "pts_per_week": "104.62"
-      },
-      {
-        "rank": "4",
-        "team_name": "Press Coverage Aiden",
-        "w_l_t": null,
-        "points_for": null,
-        "points_this_week": "0.00",
-        "projected_points": "82.25",
-        "season_points": "373.14",
-        "fab": "$970",
-        "waiver": "1",
-        "moves": "6",
-        "pts_per_week": "74.63"
-      },
-      {
-        "rank": "3",
-        "team_name": "Alex Express",
-        "w_l_t": null,
-        "points_for": null,
-        "points_this_week": "0.00",
-        "projected_points": "87.06",
-        "season_points": "463.50",
-        "fab": "$400",
-        "waiver": "7",
-        "moves": "7",
-        "pts_per_week": "92.7"
-      },
-      {
-        "rank": "2",
-        "team_name": "Blindside Raaaaalph",
-        "w_l_t": null,
-        "points_for": null,
-        "points_this_week": "0.00",
-        "projected_points": "91.93",
-        "season_points": "485.38",
-        "fab": "$149",
-        "waiver": "9",
-        "moves": "7",
-        "pts_per_week": "97.08"
-      },
-      {
-        "rank": "1",
-        "team_name": "MillerTime",
-        "w_l_t": null,
-        "points_for": null,
-        "points_this_week": "0.00",
-        "projected_points": "92.20",
-        "season_points": "468.14",
-        "fab": "$899",
-        "waiver": "3",
-        "moves": "1",
-        "pts_per_week": "93.63"
       }
     ],
     "eliminated_teams": [
@@ -489,16 +490,7 @@
         "nfl_team": "NO",
         "lineup_slot": "QB",
         "injury_status": null,
-        "proj_pts": "19.00",
-        "fan_pts": null
-      },
-      {
-        "player_name": "Quinshon Judkins",
-        "position": "RB",
-        "nfl_team": "Cle",
-        "lineup_slot": "RB",
-        "injury_status": "Q",
-        "proj_pts": "10.16",
+        "proj_pts": "17.65",
         "fan_pts": null
       },
       {
@@ -507,7 +499,16 @@
         "nfl_team": "GB",
         "lineup_slot": "RB",
         "injury_status": null,
-        "proj_pts": "10.09",
+        "proj_pts": "11.01",
+        "fan_pts": null
+      },
+      {
+        "player_name": "Javonte Williams",
+        "position": "RB",
+        "nfl_team": "Dal",
+        "lineup_slot": "RB",
+        "injury_status": null,
+        "proj_pts": "14.47",
         "fan_pts": null
       },
       {
@@ -515,17 +516,17 @@
         "position": "WR",
         "nfl_team": "Sea",
         "lineup_slot": "WR",
-        "injury_status": "Q",
-        "proj_pts": "17.95",
-        "fan_pts": null
+        "injury_status": null,
+        "proj_pts": "18.37",
+        "fan_pts": "19.40"
       },
       {
-        "player_name": "Michael Wilson",
+        "player_name": "CeeDee Lamb",
         "position": "WR",
-        "nfl_team": "Ari",
+        "nfl_team": "Dal",
         "lineup_slot": "WR",
         "injury_status": null,
-        "proj_pts": "12.60",
+        "proj_pts": "15.74",
         "fan_pts": null
       },
       {
@@ -534,25 +535,34 @@
         "nfl_team": "Ari",
         "lineup_slot": "TE",
         "injury_status": null,
-        "proj_pts": "14.16",
+        "proj_pts": "13.02",
+        "fan_pts": null
+      },
+      {
+        "player_name": "Michael Wilson",
+        "position": "WR",
+        "nfl_team": "Ari",
+        "lineup_slot": "W/R/T",
+        "injury_status": null,
+        "proj_pts": "11.08",
         "fan_pts": null
       },
       {
         "player_name": "Harold Fannin Jr.",
         "position": "TE",
         "nfl_team": "Cle",
-        "lineup_slot": "W/R/T",
+        "lineup_slot": "BN",
         "injury_status": null,
-        "proj_pts": "8.24",
+        "proj_pts": "8.97",
         "fan_pts": null
       },
       {
-        "player_name": "Javonte Williams",
+        "player_name": "Quinshon Judkins",
         "position": "RB",
-        "nfl_team": "Dal",
+        "nfl_team": "Cle",
         "lineup_slot": "BN",
-        "injury_status": null,
-        "proj_pts": "14.42",
+        "injury_status": "Q",
+        "proj_pts": "9.94",
         "fan_pts": null
       },
       {
@@ -560,8 +570,8 @@
         "position": "WR",
         "nfl_team": "Buf",
         "lineup_slot": "BN",
-        "injury_status": "O",
-        "proj_pts": "0.00",
+        "injury_status": "Q",
+        "proj_pts": "11.89",
         "fan_pts": null
       },
       {
@@ -570,7 +580,7 @@
         "nfl_team": "Hou",
         "lineup_slot": "BN",
         "injury_status": null,
-        "proj_pts": "17.01",
+        "proj_pts": "16.61",
         "fan_pts": null
       },
       {
@@ -583,22 +593,12 @@
         "fan_pts": null
       },
       {
-        "player_name": "Xavier Worthy",
-        "position": "WR",
-        "nfl_team": "KC",
-        "lineup_slot": "BN",
-        "injury_status": null,
-        "proj_pts": "8.76",
-        "fan_pts": null,
-        "note": "Pending Waiver 1 (Oct 14): Bid $350 for CeeDee Lamb, Drop Xavier Worthy"
-      },
-      {
         "player_name": "Kaelon Black",
         "position": "RB",
         "nfl_team": "SF",
         "lineup_slot": "BN",
         "injury_status": null,
-        "proj_pts": "4.25",
+        "proj_pts": "5.31",
         "fan_pts": null
       },
       {
@@ -608,25 +608,32 @@
         "lineup_slot": "BN",
         "injury_status": "IR",
         "proj_pts": "0.00",
-        "fan_pts": null
+        "fan_pts": "0.00"
       }
     ],
     "current_matchup": {
       "week": 6,
       "week_dates": "Week 6: Oct 13 - Oct 19",
-      "status": "Not started yet",
+      "status": "In progress",
       "opponent_team_name": "Joe B’s",
       "opponent_manager_name": "David",
       "opponent_record": null,
       "opponent_rank": "9",
-      "my_score": "0.00",
+      "my_score": "19.40",
       "opponent_score": "0.00",
       "my_proj_matchup_page": "92.20",
       "opponent_proj_matchup_page": "44.75",
       "my_proj_home_page": "92.20",
       "opponent_proj_home_page": "44.75",
       "my_status_label": "SAFE",
-      "note": "Week 6 stats may change if stat corrections are applied by Thursday, Oct 22."
-    }
+      "note": "Week 6 stats may change if stat corrections are applied by Thursday, Oct 22.",
+      "my_live_proj": "101.34",
+      "opponent_live_proj": "83.82",
+      "my_players_remaining": 6,
+      "opponent_players_remaining": 7,
+      "survival_label": "SAFE"
+    },
+    "standings_last_update": "Thu Oct 15 11:50pm PDT",
+    "my_total_points": "487.54 (4th)"
   }
 }
